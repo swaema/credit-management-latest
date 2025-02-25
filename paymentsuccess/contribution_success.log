@@ -187,3 +187,102 @@
     "amount": 20000,
     "percentage": "40"
 }
+[2025-02-25 13:27:11] Starting contribution success processing
+[2025-02-25 13:27:11] Processing session - Data: {
+    "session_id": "cs_test_a128cWFT6kIpxgarUoW2XJjXSxF7yEDmxvJJWivrzA9miyCVhLEZX2V4WB"
+}
+[2025-02-25 13:27:14] Contribution processed successfully - Data: {
+    "loan_id": "12",
+    "amount": 30000,
+    "percentage": "75"
+}
+[2025-02-25 13:27:45] Starting contribution success processing
+[2025-02-25 13:27:45] Processing session - Data: {
+    "session_id": "cs_test_a1XxuKy7kyorhiysqKua9ej52CWJpddb7LAMFOVHAfaN9Maj0OYpHGM5EC"
+}
+[2025-02-25 13:27:47] Contribution processed successfully - Data: {
+    "loan_id": "12",
+    "amount": 10000,
+    "percentage": "25"
+}
+[2025-02-25 13:51:57] Starting contribution success processing
+[2025-02-25 13:51:57] Processing session - Data: {
+    "session_id": "cs_test_a1se4JFmDMKbhjqQEKEZAUDMESLnT1a0Ag17NUAnkr4063IaxotFtLak9a"
+}
+[2025-02-25 13:51:57] Contribution processed successfully - Data: {
+    "loan_id": "14",
+    "amount": 8000,
+    "percentage": "80"
+}
+[2025-02-25 13:57:57] Starting contribution success processing
+[2025-02-25 13:57:57] Processing session - Data: {
+    "session_id": "cs_test_a1TyfShGYvTt1pSROqGd8Fwpu7Jv6idmWzPlWTqSOi6EMgSUA6kwbulI0p"
+}
+[2025-02-25 13:57:57] Contribution processed successfully - Data: {
+    "loan_id": "14",
+    "amount": 200,
+    "percentage": "2"
+}
+[2025-02-25 14:04:38] Starting contribution success processing
+[2025-02-25 14:04:38] Processing session - Data: {
+    "session_id": "cs_test_a1n0YuqACR0i7XPa2bv94kCAa8zwlV8uoIr3txlluBq4qvTVG9RhPSrbqF"
+}
+[2025-02-25 14:04:39] Contribution processed successfully - Data: {
+    "loan_id": "14",
+    "amount": 1800,
+    "percentage": "18"
+}
+[2025-02-25 14:15:16] Starting contribution success processing
+[2025-02-25 14:15:16] Processing session - Data: {
+    "session_id": "cs_test_a15FpQYWJHoOt9h7QTt4QKCPlAu7Gk6igmrNALXEHCNobjH9rAzBJBHMb5"
+}
+[2025-02-25 14:15:17] Contribution processed successfully - Data: {
+    "loan_id": "15",
+    "amount": 30000,
+    "percentage": "60"
+}
+[2025-02-25 14:15:57] Starting contribution success processing
+[2025-02-25 14:15:57] Processing session - Data: {
+    "session_id": "cs_test_a11zNe9cb529GutrvMmhg4DrfUpTBvfIvTZic2dvhJyja97NsRlFLNtr6X"
+}
+[2025-02-25 14:15:58] Contribution processed successfully - Data: {
+    "loan_id": "15",
+    "amount": 20000,
+    "percentage": "40"
+}
+[2025-02-25 17:35:40] Starting contribution success processing
+[2025-02-25 17:35:40] Processing session - Data: {
+    "session_id": "cs_test_a1xSZjJa1sxfG3vsfO16IGjtt1qqzwPNVLX6VuUph50Nne5zgGzUgnrk6h"
+}
+[2025-02-25 17:35:42] Contribution processed successfully - Data: {
+    "loan_id": "1",
+    "amount": 8000,
+    "percentage": "80"
+}
+[2025-02-25 17:40:11] Starting contribution success processing
+[2025-02-25 17:40:11] Processing session - Data: {
+    "session_id": "cs_test_a1RoUsPwIvXzveT5QKKrpSb7K05SObOxkXayq2XT04yPnexE3YR6hDbhPz"
+}
+[2025-02-25 17:40:12] Contribution processed successfully - Data: {
+    "loan_id": "1",
+    "amount": 2000,
+    "percentage": "20"
+}
+[2025-02-25 18:56:48] Starting contribution success processing
+[2025-02-25 18:56:48] Processing session - Data: {
+    "session_id": "cs_test_a1m3L8OGWCyMu52N4hEtrj35IxPxecxBeCdWs2rgU0npXMHx8kOuSBu3eT"
+}
+[2025-02-25 18:56:52] Contribution processed successfully - Data: {
+    "loan_id": "2",
+    "amount": 30000,
+    "percentage": "60"
+}
+[2025-02-25 18:57:41] Starting contribution success processing
+[2025-02-25 18:57:41] Processing session - Data: {
+    "session_id": "cs_test_a140GngA2Fj4O0VShYdIuR3CAQx74tbqaAIwwZE9dOz5Ttxb3obvCHrBz9"
+}
+[2025-02-25 18:57:44] Contribution processed successfully - Data: {
+    "loan_id": "2",
+    "amount": 20000,
+    "percentage": "40"
+}

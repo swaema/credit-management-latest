@@ -40,7 +40,6 @@ foreach ($queries as $key => $query) {
         ($result->fetch_assoc()['count'] ?? 0);
 }
 
-$conn->close();
 
 include_once('Layout/head.php');
 include_once('Layout/sidebar.php');
@@ -107,6 +106,7 @@ include_once('Layout/sidebar.php');
             </div>
         </div>
     </div>
+    <?php require_once('./chart/adminfeechart.php') ?>
 </div>
 
 <style>

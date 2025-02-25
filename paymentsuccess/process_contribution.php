@@ -110,7 +110,7 @@ try {
         $stmt->bind_param("i", $loanId);
         $stmt->execute();
         $loanData = $stmt->get_result()->fetch_assoc();
-
+        $maxAllowed = $loanData['loanAmount'] - $loanData['total_funded'];
         if (!$loanData) {
             throw new Exception('Loan not found');
         }
@@ -126,20 +126,6 @@ try {
             throw new Exception("Loan is already fully funded.");
         }
 
-        // ------------------------------------------------------
-        //    - If there's more than Rs5,000 left, a single lender can contribute up to that entire remainder.
-        //    - If the remainder is <= 5,000 but >= 500, the max single contribution is Rs500.
-        //    - If the remainder is < 500, the max single contribution is the remainder itself (so it can be fully funded).
-        // ------------------------------------------------------
-        if ($availableFunding > 5000) {
-            $maxAllowed = $availableFunding;
-        } elseif ($availableFunding >= 500) {
-            $maxAllowed = 500;
-        } else {
-            $maxAllowed = $availableFunding;
-        }
-
-        // 5. Validate the user's requested contribution
         if ($amount <= 0 || $amount > $maxAllowed) {
             throw new Exception(
                 "Error: funding amount exceeding loan's accepted amount. 

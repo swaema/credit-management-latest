@@ -277,7 +277,7 @@ include_once('Layout/sidebar.php');
     <?php endif; ?>
 
     <div class="loan-header mb-4">
-        <h2 class="mb-0">Contributed Loan Applications</h2>
+        <h2 class="mb-0 text-white">Contributed Loan Applications</h2>
         <p class="text-light mb-0 mt-2">Manage and review all contributed loan applications</p>
     </div>
 
@@ -517,6 +517,15 @@ include_once('Layout/sidebar.php');
                                                         <p class="mb-0">
                                                             <?php echo htmlspecialchars($loan['loanPurpose']); ?>
                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="card bg-light">
+                                                    <div class="card-body">
+                                                        <?php 
+                                                        $loanId = $loan['id'];
+                                                                                                                require_once('./modal/lenderinfo.php'); ?>
                                                     </div>
                                                 </div>
                                             </div>

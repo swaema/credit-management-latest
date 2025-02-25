@@ -377,69 +377,7 @@ class Loan
         }
     }
 
-    
-    public static function newLenderPaymentMethod($amount)
-    {
-        try {
-            $paypal = require_once('../Classes/paypal_config.php');
-            // Step 1: Deduct money from lender's PayPal account and send to admin
-            $payouts = new PayPal\Api\Payout();
-            $senderBatchHeader = new PayPal\Api\PayoutSenderBatchHeader();
-            $senderBatchHeader->setSenderBatchId(uniqid())
-                ->setEmailSubject("Loan Contribution Successful");
 
-            $senderItem = new PayPal\Api\PayoutItem();
-            $senderItem->setRecipientType('EMAIL')
-                ->setReceiver("sb-oav43o14717327@business.example.com") // Admin's PayPal sandbox email
-                ->setAmount(new PayPal\Api\Currency([
-                    'value' => ceil($amount),
-                    'currency' => 'GBP'
-                ]))
-                ->setSenderItemId(uniqid());
-
-            $payouts->setSenderBatchHeader($senderBatchHeader)
-                ->addItem($senderItem);
-
-            $output = $payouts->create(null, $paypal);
-
-            // Step 2: Record the transaction in lendadtrans table
-            // $stmt = $conn->prepare("INSERT INTO lendadtrans (loan_id, lender_username, admin_username, transaction_id, amount, currency, type, status) 
-            //                         VALUES (:loan_id, :lender_username, :admin_username, :transaction_id, :amount, 'USD', 'lender_to_admin', 'completed')");
-            // $stmt->execute([
-            //     'loan_id' => $loan_id,
-            //     'lender_username' => $lender_username,
-            //     'admin_username' => 'admin',
-            //     'transaction_id' => $output->getBatchHeader()->getPayoutBatchId(),
-            //     'amount' => $amount
-            // ]);
-
-            // // Step 3: Update loan status if fully funded
-            // $stmt = $conn->prepare("SELECT SUM(amount) AS total_funded FROM lendadtrans WHERE loan_id = :loan_id");
-            // $stmt->execute(['loan_id' => $loan_id]);
-            // $total_funded = $stmt->fetch()['total_funded'];
-
-            // $stmt = $conn->prepare("SELECT amount FROM loans WHERE id = :loan_id");
-            // $stmt->execute(['loan_id' => $loan_id]);
-            // $loan_amount = $stmt->fetch()['amount'];
-
-            // if ($total_funded >= $loan_amount) {
-            //     $conn->prepare("UPDATE loans SET status = 'funded' WHERE id = :loan_id")->execute(['loan_id' => $loan_id]);
-            // } else {
-            //     $conn->prepare("UPDATE loans SET status = 'partially_funded' WHERE id = :loan_id")->execute(['loan_id' => $loan_id]);
-            // }
-
-            // $success = "Contribution successful! $amount has been sent to the admin's PayPal account.";
-            return true;
-        } catch (PayPal\Exception\PayPalConnectionException $ex) {
-            var_dump("paypal error".$ex->getMessage());
-            exit;
-            // $error = "PayPal API Error: " . $ex->getData();
-        } catch (Exception $e) {
-            var_dump("error".$e->getMessage());
-            exit;
-            // $error = "Error: " . $e->getMessage();
-        }
-    }
 
 
     public static function contributeLoan($loanId, $lender_id,  $amountContributed)
@@ -758,41 +696,7 @@ class Loan
             return [];
         }
     }
-    // public static function getLoanById($id)
-    // {
-    //     try {
-    //         $db = Database::getConnection();
-    //         if ($db === null) {
-    //             throw new Exception("Database connection failed");
-    //         }
-    //         // Modify the query to use loan ID as a parameter
-    //         $query = "SELECT l.*, u.name, u.email, u.mobile, u.image, u.address 
-    //               FROM loans l 
-    //               INNER JOIN users u ON l.user_id = u.id 
-    //               WHERE l.id = ?";
 
-    //         $stmt = $db->prepare($query);
-    //         $stmt->bind_param("i", $id); // Use the loan ID as the parameter
-    //         $stmt->execute();
-    //         $result = $stmt->get_result();
-
-    //         // Fetch a single loan result
-    //         $loan = $result->fetch_assoc();
-
-    //         $stmt->close();
-    //         return $loan;
-
-    //     } catch (Exception $e) {
-    //         error_log("Error fetching loan: " . $e->getMessage());
-    //         return null;
-    //     }
-    // }
-
-        /**
-     * Get loan details including borrower's Stripe account ID
-     * @param int $id The loan ID
-     * @return array|null Loan details with stripe_account_id or null if not found
-     */
     public static function getLoanById($id) {
         $db = Database::getConnection();
         $sql = "SELECT l.*, u.stripe_account_id 
@@ -1031,6 +935,19 @@ class Loan
         }
     }
     
+    public static function fetchLateEmails() {
+        $db = Database::getConnection();
+        $query = "SELECT DISTINCT u.id as user_id, u.email as Email
+                  FROM credit_management.users u
+                  JOIN credit_management.loaninstallments li ON u.id = li.user_id
+                  WHERE li.status = 'Pending'
+                    AND li.pay_date < CURDATE()";
+    
+        $stmt = $db->prepare($query);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        return $result->fetch_all(MYSQLI_ASSOC);
+    }
     
 
     

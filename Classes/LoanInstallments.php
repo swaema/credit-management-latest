@@ -277,4 +277,45 @@ class LoanInstallments
             throw $e;
         }
     }
+
+    public static function getOverduePendingInstallmentsWithLoanDetails($userid) {
+        try {
+            $db = Database::getConnection();
+            if ($db === null) {
+                throw new Exception("Database connection failed");
+            }
+    
+            $query = "SELECT li.loanInstallmentsId, li.pay_date, li.payable_amount, li.loan_id, 
+                             l.loanAmount, l.loanPurpose, l.InstallmentAmount, l.TotalLoan, l.Accepted_Date, l.status as loanStatus
+                      FROM loaninstallments li
+                      JOIN loans l ON li.loan_id = l.id
+                      WHERE li.user_id = ? 
+                        AND li.status = 'Pending'
+                        AND li.pay_date < CURDATE()";
+    
+            $stmt = $db->prepare($query);
+            if ($stmt === false) {
+                throw new Exception("Failed to prepare statement: " . $db->error);
+            }
+    
+            $stmt->bind_param("i", $userid);
+            $stmt->execute();
+            $result = $stmt->get_result();
+    
+            $overdueInstallments = [];
+            while ($row = $result->fetch_assoc()) {
+                $overdueInstallments[] = $row;
+            }
+            $stmt->close();
+    
+            return $overdueInstallments;
+        } catch (Exception $e) {
+            error_log("Error in getOverduePendingInstallmentsWithLoanDetails: " . $e->getMessage());
+            throw $e;
+        }
+    }
+    
+    
+    
+
 }

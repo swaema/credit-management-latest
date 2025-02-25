@@ -791,3 +791,331 @@
     "session_id": "cs_test_a1DkujRhB8t5xOUCCxhOVd27IpqJtPFwipdy6dUpNDm1tkYYngZGSi1qFj",
     "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1DkujRhB8t5xOUCCxhOVd27IpqJtPFwipdy6dUpNDm1tkYYngZGSi1qFj#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
 }
+[2025-02-25 13:26:50] Script started
+[2025-02-25 13:26:50] Received input - Data: {
+    "raw": "{\"amount\":30000,\"loan_id\":\"12\",\"email\":\"swaema04@gmail.com\",\"percentage\":75,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 13:26:50] Creating Stripe checkout session - Data: {
+    "amount": 30000,
+    "loan_id": 12,
+    "percentage": 75,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 13:26:52] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a128cWFT6kIpxgarUoW2XJjXSxF7yEDmxvJJWivrzA9miyCVhLEZX2V4WB",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a128cWFT6kIpxgarUoW2XJjXSxF7yEDmxvJJWivrzA9miyCVhLEZX2V4WB#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 13:27:28] Script started
+[2025-02-25 13:27:28] Received input - Data: {
+    "raw": "{\"amount\":10000,\"loan_id\":\"12\",\"email\":\"swaema04@gmail.com\",\"percentage\":25,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 13:27:28] Creating Stripe checkout session - Data: {
+    "amount": 10000,
+    "loan_id": 12,
+    "percentage": 25,
+    "lender_id": 114,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 13:27:30] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1XxuKy7kyorhiysqKua9ej52CWJpddb7LAMFOVHAfaN9Maj0OYpHGM5EC",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1XxuKy7kyorhiysqKua9ej52CWJpddb7LAMFOVHAfaN9Maj0OYpHGM5EC#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 13:51:42] Script started
+[2025-02-25 13:51:42] Received input - Data: {
+    "raw": "{\"amount\":8000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":80,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 13:51:42] Creating Stripe checkout session - Data: {
+    "amount": 8000,
+    "loan_id": 14,
+    "percentage": 80,
+    "lender_id": 114,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 13:51:43] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1se4JFmDMKbhjqQEKEZAUDMESLnT1a0Ag17NUAnkr4063IaxotFtLak9a",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1se4JFmDMKbhjqQEKEZAUDMESLnT1a0Ag17NUAnkr4063IaxotFtLak9a#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 13:52:10] Script started
+[2025-02-25 13:52:10] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":20,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 13:52:11] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs500.",
+    "trace": "#0 {main}"
+}
+[2025-02-25 13:52:16] Script started
+[2025-02-25 13:52:16] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":20,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 13:52:16] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs500.",
+    "trace": "#0 {main}"
+}
+[2025-02-25 13:52:42] Script started
+[2025-02-25 13:52:42] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":20,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 13:52:42] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs500.",
+    "trace": "#0 {main}"
+}
+[2025-02-25 13:53:36] Script started
+[2025-02-25 13:53:36] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":20,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 13:53:36] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs500.",
+    "trace": "#0 {main}"
+}
+[2025-02-25 13:55:28] Script started
+[2025-02-25 13:55:28] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":20,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 13:56:00] Script started
+[2025-02-25 13:56:00] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":20,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 13:57:02] Script started
+[2025-02-25 13:57:02] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":20,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 13:57:02] Error processing contribution - Data: {
+    "error": "{\"id\":14,\"user_id\":112,\"noOfInstallments\":2,\"interstRate\":2,\"grade\":\"A\",\"AnnualIncome\":20000,\"loanAmount\":10000,\"loanPurpose\":\"other\",\"employeementTenure\":2,\"Accepted_Date\":null,\"status\":\"Accepted\",\"requested_at\":\"2025-02-25 16:51:12\",\"InstallmentAmount\":\"6516.50\",\"TotalLoan\":13033,\"stripe_account_id\":null,\"updated_at\":\"2025-02-25 16:51:23\",\"total_funded\":\"8000\",\"borrower_email\":\"swaema04@gmail.com\"}",
+    "trace": "#0 {main}"
+}
+[2025-02-25 13:57:41] Script started
+[2025-02-25 13:57:41] Received input - Data: {
+    "raw": "{\"amount\":200,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":2,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 13:57:41] Creating Stripe checkout session - Data: {
+    "amount": 200,
+    "loan_id": 14,
+    "percentage": 2,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 13:57:42] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1TyfShGYvTt1pSROqGd8Fwpu7Jv6idmWzPlWTqSOi6EMgSUA6kwbulI0p",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1TyfShGYvTt1pSROqGd8Fwpu7Jv6idmWzPlWTqSOi6EMgSUA6kwbulI0p#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 13:58:27] Script started
+[2025-02-25 13:58:27] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":18,\"extra_amount\":200,\"extra_earning\":10}"
+}
+[2025-02-25 13:58:27] Error processing contribution - Data: {
+    "error": "{\"id\":14,\"user_id\":112,\"noOfInstallments\":2,\"interstRate\":2,\"grade\":\"A\",\"AnnualIncome\":20000,\"loanAmount\":10000,\"loanPurpose\":\"other\",\"employeementTenure\":2,\"Accepted_Date\":null,\"status\":\"Accepted\",\"requested_at\":\"2025-02-25 16:51:12\",\"InstallmentAmount\":\"6516.50\",\"TotalLoan\":13033,\"stripe_account_id\":null,\"updated_at\":\"2025-02-25 16:51:23\",\"total_funded\":\"8200\",\"borrower_email\":\"swaema04@gmail.com\"}",
+    "trace": "#0 {main}"
+}
+[2025-02-25 14:01:03] Script started
+[2025-02-25 14:01:03] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":18,\"extra_amount\":200,\"extra_earning\":10}"
+}
+[2025-02-25 14:01:03] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs-8200.",
+    "trace": "#0 {main}"
+}
+[2025-02-25 14:01:49] Script started
+[2025-02-25 14:01:49] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":18,\"extra_amount\":200,\"extra_earning\":10}"
+}
+[2025-02-25 14:01:49] Error processing contribution - Data: {
+    "error": "-8200",
+    "trace": "#0 {main}"
+}
+[2025-02-25 14:02:32] Script started
+[2025-02-25 14:02:32] Received input - Data: {
+    "raw": "{\"amount\":200,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":2,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 14:02:55] Script started
+[2025-02-25 14:02:55] Received input - Data: {
+    "raw": "{\"amount\":344,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":3.44,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 14:03:15] Script started
+[2025-02-25 14:03:15] Received input - Data: {
+    "raw": "{\"amount\":222,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":2.22,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 14:03:15] Error processing contribution - Data: {
+    "error": "{\"id\":14,\"user_id\":112,\"noOfInstallments\":2,\"interstRate\":2,\"grade\":\"A\",\"AnnualIncome\":20000,\"loanAmount\":10000,\"loanPurpose\":\"other\",\"employeementTenure\":2,\"Accepted_Date\":null,\"status\":\"Accepted\",\"requested_at\":\"2025-02-25 16:51:12\",\"InstallmentAmount\":\"6516.50\",\"TotalLoan\":13033,\"stripe_account_id\":null,\"updated_at\":\"2025-02-25 16:51:23\",\"total_funded\":\"8200\",\"borrower_email\":\"swaema04@gmail.com\"}",
+    "trace": "#0 {main}"
+}
+[2025-02-25 14:03:50] Script started
+[2025-02-25 14:03:50] Received input - Data: {
+    "raw": "{\"amount\":444,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":4.44,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 14:03:50] Error processing contribution - Data: {
+    "error": "null",
+    "trace": "#0 {main}"
+}
+[2025-02-25 14:04:00] Script started
+[2025-02-25 14:04:00] Received input - Data: {
+    "raw": "{\"amount\":44,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":0.44,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 14:04:00] Error processing contribution - Data: {
+    "error": "10000",
+    "trace": "#0 {main}"
+}
+[2025-02-25 14:04:16] Script started
+[2025-02-25 14:04:16] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":18,\"extra_amount\":200,\"extra_earning\":10}"
+}
+[2025-02-25 14:04:16] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs1800.",
+    "trace": "#0 {main}"
+}
+[2025-02-25 14:04:24] Script started
+[2025-02-25 14:04:24] Received input - Data: {
+    "raw": "{\"amount\":1800,\"loan_id\":\"14\",\"email\":\"swaema04@gmail.com\",\"percentage\":18,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 14:04:24] Creating Stripe checkout session - Data: {
+    "amount": 1800,
+    "loan_id": 14,
+    "percentage": 18,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 14:04:25] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1n0YuqACR0i7XPa2bv94kCAa8zwlV8uoIr3txlluBq4qvTVG9RhPSrbqF",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1n0YuqACR0i7XPa2bv94kCAa8zwlV8uoIr3txlluBq4qvTVG9RhPSrbqF#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 14:13:54] Script started
+[2025-02-25 14:13:54] Received input - Data: {
+    "raw": "{\"amount\":30000,\"loan_id\":\"15\",\"email\":\"swaema04@gmail.com\",\"percentage\":60,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 14:13:54] Creating Stripe checkout session - Data: {
+    "amount": 30000,
+    "loan_id": 15,
+    "percentage": 60,
+    "lender_id": 114,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 14:13:55] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a15FpQYWJHoOt9h7QTt4QKCPlAu7Gk6igmrNALXEHCNobjH9rAzBJBHMb5",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a15FpQYWJHoOt9h7QTt4QKCPlAu7Gk6igmrNALXEHCNobjH9rAzBJBHMb5#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 14:15:46] Script started
+[2025-02-25 14:15:46] Received input - Data: {
+    "raw": "{\"amount\":20000,\"loan_id\":\"15\",\"email\":\"swaema04@gmail.com\",\"percentage\":40,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 14:15:46] Creating Stripe checkout session - Data: {
+    "amount": 20000,
+    "loan_id": 15,
+    "percentage": 40,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 14:15:46] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a11zNe9cb529GutrvMmhg4DrfUpTBvfIvTZic2dvhJyja97NsRlFLNtr6X",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a11zNe9cb529GutrvMmhg4DrfUpTBvfIvTZic2dvhJyja97NsRlFLNtr6X#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 17:35:05] Script started
+[2025-02-25 17:35:05] Received input - Data: {
+    "raw": "{\"amount\":80000,\"loan_id\":\"1\",\"email\":\"swaema04@gmail.com\",\"percentage\":100,\"extra_amount\":70000,\"extra_earning\":3500}"
+}
+[2025-02-25 17:35:05] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs10000.",
+    "trace": "#0 {main}"
+}
+[2025-02-25 17:35:21] Script started
+[2025-02-25 17:35:21] Received input - Data: {
+    "raw": "{\"amount\":8000,\"loan_id\":\"1\",\"email\":\"swaema04@gmail.com\",\"percentage\":80,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 17:35:21] Creating Stripe checkout session - Data: {
+    "amount": 8000,
+    "loan_id": 1,
+    "percentage": 80,
+    "lender_id": 114,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 17:35:22] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1xSZjJa1sxfG3vsfO16IGjtt1qqzwPNVLX6VuUph50Nne5zgGzUgnrk6h",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1xSZjJa1sxfG3vsfO16IGjtt1qqzwPNVLX6VuUph50Nne5zgGzUgnrk6h#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 17:36:11] Script started
+[2025-02-25 17:36:11] Received input - Data: {
+    "raw": "{\"amount\":8000,\"loan_id\":\"1\",\"email\":\"swaema04@gmail.com\",\"percentage\":20,\"extra_amount\":6000,\"extra_earning\":300}"
+}
+[2025-02-25 17:36:11] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs2000.",
+    "trace": "#0 {main}"
+}
+[2025-02-25 17:36:19] Script started
+[2025-02-25 17:36:19] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"1\",\"email\":\"swaema04@gmail.com\",\"percentage\":20,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 17:36:19] Creating Stripe checkout session - Data: {
+    "amount": 2000,
+    "loan_id": 1,
+    "percentage": 20,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 17:36:20] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1N7fFDH72H2OeIaRKRYh00aRMtemltwqgbRxwd2dqex3lQcXpFuochhhN",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1N7fFDH72H2OeIaRKRYh00aRMtemltwqgbRxwd2dqex3lQcXpFuochhhN#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 17:39:56] Script started
+[2025-02-25 17:39:56] Received input - Data: {
+    "raw": "{\"amount\":2000,\"loan_id\":\"1\",\"email\":\"swaema04@gmail.com\",\"percentage\":20,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 17:39:56] Creating Stripe checkout session - Data: {
+    "amount": 2000,
+    "loan_id": 1,
+    "percentage": 20,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 17:39:57] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1RoUsPwIvXzveT5QKKrpSb7K05SObOxkXayq2XT04yPnexE3YR6hDbhPz",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1RoUsPwIvXzveT5QKKrpSb7K05SObOxkXayq2XT04yPnexE3YR6hDbhPz#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 18:56:19] Script started
+[2025-02-25 18:56:19] Received input - Data: {
+    "raw": "{\"amount\":30000,\"loan_id\":\"2\",\"email\":\"swaema04@gmail.com\",\"percentage\":60,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 18:56:19] Creating Stripe checkout session - Data: {
+    "amount": 30000,
+    "loan_id": 2,
+    "percentage": 60,
+    "lender_id": 114,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 18:56:22] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1m3L8OGWCyMu52N4hEtrj35IxPxecxBeCdWs2rgU0npXMHx8kOuSBu3eT",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1m3L8OGWCyMu52N4hEtrj35IxPxecxBeCdWs2rgU0npXMHx8kOuSBu3eT#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 18:57:07] Script started
+[2025-02-25 18:57:07] Received input - Data: {
+    "raw": "{\"amount\":300000,\"loan_id\":\"2\",\"email\":\"swaema04@gmail.com\",\"percentage\":40,\"extra_amount\":280000,\"extra_earning\":14000}"
+}
+[2025-02-25 18:57:07] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs20000.",
+    "trace": "#0 {main}"
+}
+[2025-02-25 18:57:17] Script started
+[2025-02-25 18:57:17] Received input - Data: {
+    "raw": "{\"amount\":20000,\"loan_id\":\"2\",\"email\":\"swaema04@gmail.com\",\"percentage\":40,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 18:57:17] Creating Stripe checkout session - Data: {
+    "amount": 20000,
+    "loan_id": 2,
+    "percentage": 40,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 18:57:23] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a140GngA2Fj4O0VShYdIuR3CAQx74tbqaAIwwZE9dOz5Ttxb3obvCHrBz9",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a140GngA2Fj4O0VShYdIuR3CAQx74tbqaAIwwZE9dOz5Ttxb3obvCHrBz9#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}

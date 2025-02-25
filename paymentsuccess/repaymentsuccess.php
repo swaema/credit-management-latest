@@ -64,66 +64,6 @@ try {
     $adminfee = $metadata->adminfee;
     $user_id = $_SESSION['user_id'];
 
-    // Check for recent successful payment
-    $recentPayment = $db->prepare("
-        SELECT id FROM transactions 
-        WHERE user_id = ? 
-        AND reference_id = ? 
-        AND type = 'repayment'
-        AND amount = ?
-        AND status = 'completed'
-        AND transaction_date >= DATE_SUB(NOW(), INTERVAL 8 SECOND)
-    ");
-    $recentPayment->bind_param("iid", $user_id, $loanId, $payAmount);
-    $recentPayment->execute();
-    if ($recentPayment->get_result()->num_rows > 0) {
-        logRepayment("Payment already processed", [
-            'loan_id' => $loanId,
-            'amount' => $payAmount
-        ]);
-        header("Location: " . $base_url . "Borrower/ActiveLoan.php?status=success");
-        exit();
-    }
-
-    // Check for existing installment
-    $existingInstallment = $db->prepare("
-        SELECT loanInstallmentsId 
-        FROM loaninstallments 
-        WHERE loan_id = ? 
-        AND payable_amount = ? 
-        AND status = 'Paid'
-        AND pay_date >= DATE_SUB(NOW(), INTERVAL 8 SECOND)
-    ");
-    $existingInstallment->bind_param("sd", $loanId, $payAmount);
-    $existingInstallment->execute();
-    if ($existingInstallment->get_result()->num_rows > 0) {
-        logRepayment("Installment already paid", [
-            'loan_id' => $loanId,
-            'amount' => $payAmount
-        ]);
-        header("Location: " . $base_url . "Borrower/ActiveLoan.php?status=success");
-        exit();
-    }
-
-    // Add processing lock
-    $lockQuery = "INSERT IGNORE INTO loan_processing_locks (loan_id) VALUES (?)";
-    $lockStmt = $db->prepare($lockQuery);
-    $lockStmt->bind_param("i", $loanId);
-    $lockStmt->execute();
-    
-    if ($lockStmt->affected_rows === 0) {
-        // Another process is handling this payment
-        sleep(2);
-        $recentPayment->execute();
-        if ($recentPayment->get_result()->num_rows > 0) {
-            logRepayment("Payment processed by concurrent request", [
-                'loan_id' => $loanId,
-                'amount' => $payAmount
-            ]);
-            header("Location: " . $base_url . "Borrower/ActiveLoan.php?status=success");
-            exit();
-        }
-    }
 
     logRepayment("Processing repayment", [
         'loan_id' => $loanId,
@@ -268,6 +208,23 @@ if (!$stmt->execute()) {
             'loan_id' => $loanId,
             'amount' => $payAmount
         ]);
+
+        $query = "
+        UPDATE loans l
+        JOIN (
+            SELECT loan_id
+            FROM loaninstallments
+            WHERE loan_id = ?
+            GROUP BY loan_id
+            HAVING SUM(CASE WHEN status = 'Pending' THEN 1 ELSE 0 END) = 0
+        ) li ON l.id = li.loan_id
+        SET l.status = 'Closed';
+        ";
+$closedStmt = $db->prepare($query);
+$closedStmt->bind_param("i", $loanId);
+$closedStmt->execute();
+
+
 
         // Redirect to success page
         header("Location: " . $base_url . "Borrower/ActiveLoan.php?status=success");

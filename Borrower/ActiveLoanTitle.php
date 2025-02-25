@@ -56,7 +56,8 @@ if (isset($_POST['payIns'])) {
     }
 }
 
- $loans = Loan::allActiveLoans($id);
+// $loans = Loan::allLoansBorrower("approved");
+$loans = Loan::allLoansBorrower("Closed");
 
 include_once('Layout/head.php');
 include_once('Layout/sidebar.php');
@@ -214,8 +215,8 @@ include_once('Layout/sidebar.php');
     <?php endif; ?>
 
     <div class="dashboard-header">
-        <h2 class="mb-0">Active Loans</h2>
-        <p class="text-light mb-0 mt-2">Overview of Active Loans</p>
+        <h2 class="mb-0">Closed Loan Dashboard</h2>
+        <p class="text-light mb-0 mt-2">Viewing Past Closed Loans</p>
     </div>
 
     <div class="loan-card">
@@ -264,27 +265,19 @@ include_once('Layout/sidebar.php');
                                             data-bs-toggle="modal" data-bs-target="#historyModal<?php echo $loan['id']; ?>">
                                         <i class="fas fa-history me-1"></i> History
                                     </button>
-                                    <?php if ($loan['status'] === 'Funded'): ?>
+                                    <?php if ($loan['status'] === 'Closed'): ?>
                                         <button type="button" class="btn btn-primary btn-sm action-btn ms-2" 
                                                 data-bs-toggle="modal" data-bs-target="#paymentModal<?php echo $loan['id']; ?>">
-                                            <i class="fas fa-credit-card me-1"></i> Make Payment
+                                            <i class="fas fa-credit-card me-1"></i> Details
                                         </button>
                                     <?php endif; ?>
-                                    <button class="btn btn-primary btn-sm action-btn ms-2"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#detailsModal<?php echo $loan['id']; ?>">
-                                        <i class="fas fa-eye me-2"></i> View Details
-                                    </button>
                                 </div>
 
                                 <!-- Include Payment History Modal -->
                                 <?php include 'modals/history-modal.php'; ?>
 
                                 <!-- Include Payment Details Modal -->
-                                <?php include 'modals/payment-modal.php'; ?>
-
-                                <?php include 'modals/details-modal.php'; ?>
-
+                                <?php include 'modals/Closed-details-modal.php'; ?>
                             </td>
                         </tr>
                     <?php 
