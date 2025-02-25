@@ -1,0 +1,145 @@
+Stripe\Checkout\Session Object
+(
+    [id] => cs_test_a1FpTUrxlrRSLnP99oNqvl3AyMpyYclvqPacgjwIx094mNnlj53DLsVWkI
+    [object] => checkout.session
+    [adaptive_pricing] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+        )
+
+    [after_expiration] => 
+    [allow_promotion_codes] => 
+    [amount_subtotal] => 4300000
+    [amount_total] => 4300000
+    [automatic_tax] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+            [liability] => 
+            [status] => 
+        )
+
+    [billing_address_collection] => 
+    [cancel_url] => http://localhost:8088/cancel.php
+    [client_reference_id] => 
+    [client_secret] => 
+    [consent] => 
+    [consent_collection] => 
+    [created] => 1737891842
+    [currency] => gbp
+    [currency_conversion] => 
+    [custom_fields] => Array
+        (
+        )
+
+    [custom_text] => Stripe\StripeObject Object
+        (
+            [after_submit] => 
+            [shipping_address] => 
+            [submit] => 
+            [terms_of_service_acceptance] => 
+        )
+
+    [customer] => 
+    [customer_creation] => if_required
+    [customer_details] => Stripe\StripeObject Object
+        (
+            [address] => Stripe\StripeObject Object
+                (
+                    [city] => 
+                    [country] => MU
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => dissertationsafefund@gmail.com
+            [name] => kdfjns sdjkfnsdf
+            [phone] => 
+            [tax_exempt] => none
+            [tax_ids] => Array
+                (
+                )
+
+        )
+
+    [customer_email] => dissertationsafefund@gmail.com
+    [expires_at] => 1737978242
+    [invoice] => 
+    [invoice_creation] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+            [invoice_data] => Stripe\StripeObject Object
+                (
+                    [account_tax_ids] => 
+                    [custom_fields] => 
+                    [description] => 
+                    [footer] => 
+                    [issuer] => 
+                    [metadata] => Stripe\StripeObject Object
+                        (
+                        )
+
+                    [rendering_options] => 
+                )
+
+        )
+
+    [livemode] => 
+    [locale] => en
+    [metadata] => Stripe\StripeObject Object
+        (
+            [lenderid] => 104
+            [loanid] => 60
+            [percentage] => 43
+        )
+
+    [mode] => payment
+    [payment_intent] => pi_3QlUG9EtuCL1PUfK0BEBvfw9
+    [payment_link] => 
+    [payment_method_collection] => if_required
+    [payment_method_configuration_details] => 
+    [payment_method_options] => Stripe\StripeObject Object
+        (
+            [card] => Stripe\StripeObject Object
+                (
+                    [request_three_d_secure] => automatic
+                )
+
+        )
+
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [payment_status] => paid
+    [phone_number_collection] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+        )
+
+    [recovered_from] => 
+    [saved_payment_method_options] => 
+    [setup_intent] => 
+    [shipping_address_collection] => 
+    [shipping_cost] => 
+    [shipping_details] => 
+    [shipping_options] => Array
+        (
+        )
+
+    [status] => complete
+    [submit_type] => 
+    [subscription] => 
+    [success_url] => http://localhost:8088/paymentsuccess/repaymentsuccess.php?session_id={CHECKOUT_SESSION_ID}&loan_id=
+    [total_details] => Stripe\StripeObject Object
+        (
+            [amount_discount] => 0
+            [amount_shipping] => 0
+            [amount_tax] => 0
+        )
+
+    [ui_mode] => hosted
+    [url] => 
+)

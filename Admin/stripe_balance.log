@@ -1,0 +1,45 @@
+Stripe\Balance Object
+(
+    [object] => balance
+    [available] => Array
+        (
+            [0] => Stripe\StripeObject Object
+                (
+                    [amount] => 100019999900
+                    [currency] => gbp
+                    [source_types] => Stripe\StripeObject Object
+                        (
+                            [card] => 100019999900
+                        )
+
+                )
+
+        )
+
+    [connect_reserved] => Array
+        (
+            [0] => Stripe\StripeObject Object
+                (
+                    [amount] => 0
+                    [currency] => gbp
+                )
+
+        )
+
+    [livemode] => 
+    [pending] => Array
+        (
+            [0] => Stripe\StripeObject Object
+                (
+                    [amount] => 292
+                    [currency] => gbp
+                    [source_types] => Stripe\StripeObject Object
+                        (
+                            [card] => 292
+                        )
+
+                )
+
+        )
+
+)

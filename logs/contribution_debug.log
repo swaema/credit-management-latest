@@ -1,0 +1,793 @@
+[2025-02-18 21:39:03] Script started
+[2025-02-18 21:39:03] Received input - Data: {
+    "raw": "{\"amount\":250,\"loan_id\":\"107\",\"email\":\"ema04hh@gmail.com\",\"percentage\":12.5,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 21:39:03] Creating Stripe checkout session - Data: {
+    "amount": 250,
+    "loan_id": 107,
+    "percentage": 12.5,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-18 21:39:04] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1QZquXo9HmOLIJGjbC9u4sllpjZtFlCrRIbiB1NbzMBa0Me70fmifeyzf",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1QZquXo9HmOLIJGjbC9u4sllpjZtFlCrRIbiB1NbzMBa0Me70fmifeyzf#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-18 21:54:28] Script started
+[2025-02-18 21:54:28] Received input - Data: {
+    "raw": "{\"amount\":150,\"loan_id\":\"107\",\"email\":\"ema04hh@gmail.com\",\"percentage\":7.5,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 21:54:28] Creating Stripe checkout session - Data: {
+    "amount": 150,
+    "loan_id": 107,
+    "percentage": 7.5,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-18 21:54:29] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1SKJ97pViZh9PgF2DeYId6sUErvcjDGc2qKpRZBVvkdpNb94i6KGTxX3Q",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1SKJ97pViZh9PgF2DeYId6sUErvcjDGc2qKpRZBVvkdpNb94i6KGTxX3Q#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-18 22:11:03] Script started
+[2025-02-18 22:11:03] Received input - Data: {
+    "raw": "{\"amount\":140,\"loan_id\":\"107\",\"email\":\"ema04hh@gmail.com\",\"percentage\":7,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 22:11:03] Creating Stripe checkout session - Data: {
+    "amount": 140,
+    "loan_id": 107,
+    "percentage": 7,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-18 22:11:03] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1AIolWeJjiEDDrXp2ELZjBuJWBXVghIYJgVzpZOVZhx4LFMulGcTSRZOe",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1AIolWeJjiEDDrXp2ELZjBuJWBXVghIYJgVzpZOVZhx4LFMulGcTSRZOe#fidkdWxOYHwnPyd1blpxYHZxWjA0VGxJSXdHNVdQX1Q8VUtwUzZWTkxHX0BodzVCPD18czJpT0ldZ1dcYUk8YUpIfUljS24xYmx3RGMxcFdsUVBvRjQ8czNtd0Z%2FdUlKcm5HclVgUVJIaT1NNTVDVW0xdHVSXycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+}
+[2025-02-18 22:19:16] Script started
+[2025-02-18 22:19:16] Received input - Data: {
+    "raw": "{\"amount\":100,\"loan_id\":\"107\",\"email\":\"ema04hh@gmail.com\",\"percentage\":5,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 22:19:16] Creating Stripe checkout session - Data: {
+    "amount": 100,
+    "loan_id": 107,
+    "percentage": 5,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-18 22:19:17] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1zuXn3TXC9oI0AuJcY7VK3C6gpfPng1WSCsBcn7aniHcdizWLzTZ42saq",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1zuXn3TXC9oI0AuJcY7VK3C6gpfPng1WSCsBcn7aniHcdizWLzTZ42saq#fidkdWxOYHwnPyd1blpxYHZxWjA0VGxJSXdHNVdQX1Q8VUtwUzZWTkxHX0BodzVCPD18czJpT0ldZ1dcYUk8YUpIfUljS24xYmx3RGMxcFdsUVBvRjQ8czNtd0Z%2FdUlKcm5HclVgUVJIaT1NNTVDVW0xdHVSXycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+}
+[2025-02-18 22:22:37] Script started
+[2025-02-18 22:22:37] Received input - Data: {
+    "raw": "{\"amount\":400,\"loan_id\":\"107\",\"email\":\"ema04hh@gmail.com\",\"percentage\":20,\"extra_amount\":80,\"extra_earning\":4}"
+}
+[2025-02-18 22:22:37] Error processing contribution - Data: {
+    "error": "Maximum contribution allowed is $320.00",
+    "trace": "#0 {main}"
+}
+[2025-02-18 22:22:47] Script started
+[2025-02-18 22:22:47] Received input - Data: {
+    "raw": "{\"amount\":320,\"loan_id\":\"107\",\"email\":\"ema04hh@gmail.com\",\"percentage\":16,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 22:22:47] Creating Stripe checkout session - Data: {
+    "amount": 320,
+    "loan_id": 107,
+    "percentage": 16,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-18 22:22:47] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1foA7aSJzIsUDJHZdSL6cHWFyzDwVgyk1Lg8ikDUV4ZbOSOyUMHVgTTN6",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1foA7aSJzIsUDJHZdSL6cHWFyzDwVgyk1Lg8ikDUV4ZbOSOyUMHVgTTN6#fidkdWxOYHwnPyd1blpxYHZxWjA0VGxJSXdHNVdQX1Q8VUtwUzZWTkxHX0BodzVCPD18czJpT0ldZ1dcYUk8YUpIfUljS24xYmx3RGMxcFdsUVBvRjQ8czNtd0Z%2FdUlKcm5HclVgUVJIaT1NNTVDVW0xdHVSXycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+}
+[2025-02-18 22:46:23] Script started
+[2025-02-18 22:47:38] Script started
+[2025-02-18 22:48:18] Script started
+[2025-02-18 22:48:18] Received input - Data: {
+    "raw": "{\"amount\":4000,\"loan_id\":\"106\",\"email\":\"ema04hh@gmail.com\",\"percentage\":80,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 22:48:18] Creating Stripe checkout session - Data: {
+    "amount": 4000,
+    "loan_id": 106,
+    "percentage": 80,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": null
+}
+[2025-02-18 22:48:19] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1jK7cc0xu3ZYduWI7jfUzbKnImLMUxtJX8YoIM5vHXzyg35O6gLNlwGbq",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1jK7cc0xu3ZYduWI7jfUzbKnImLMUxtJX8YoIM5vHXzyg35O6gLNlwGbq#fidkdWxOYHwnPyd1blpxYHZxWjA0VGxJSXdHNVdQX1Q8VUtwUzZWTkxHX0BodzVCPD18czJpT0ldZ1dcYUk8YUpIfUljS24xYmx3RGMxcFdsUVBvRjQ8czNtd0Z%2FdUlKcm5HclVgUVJIaT1NNTVDVW0xdHVSXycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+}
+[2025-02-18 23:05:26] Script started
+[2025-02-18 23:05:26] Received input - Data: {
+    "raw": "{\"amount\":5000,\"loan_id\":\"105\",\"email\":\"ema04hh@gmail.com\",\"percentage\":5.38,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 23:05:26] Creating Stripe checkout session - Data: {
+    "amount": 5000,
+    "loan_id": 105,
+    "percentage": 5.37999999999999989341858963598497211933135986328125,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": null
+}
+[2025-02-18 23:05:27] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1gXLVqjsp4yisVCuVboV0dJuTb1fx5q85s2EbMFzAWtuxD16wGxG6psCv",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1gXLVqjsp4yisVCuVboV0dJuTb1fx5q85s2EbMFzAWtuxD16wGxG6psCv#fidkdWxOYHwnPyd1blpxYHZxWjA0VGxJSXdHNVdQX1Q8VUtwUzZWTkxHX0BodzVCPD18czJpT0ldZ1dcYUk8YUpIfUljS24xYmx3RGMxcFdsUVBvRjQ8czNtd0Z%2FdUlKcm5HclVgUVJIaT1NNTVDVW0xdHVSXycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl"
+}
+[2025-02-18 23:06:32] Script started
+[2025-02-18 23:06:32] Received input - Data: {
+    "raw": "{\"amount\":800,\"loan_id\":\"105\",\"email\":\"ema04hh@gmail.com\",\"percentage\":0.86,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 23:06:51] Script started
+[2025-02-18 23:06:51] Received input - Data: {
+    "raw": "{\"amount\":800,\"loan_id\":\"105\",\"email\":\"ema04hh@gmail.com\",\"percentage\":0.86,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 23:07:08] Script started
+[2025-02-18 23:07:08] Received input - Data: {
+    "raw": "{\"amount\":800,\"loan_id\":\"105\",\"email\":\"ema04hh@gmail.com\",\"percentage\":0.86,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 23:13:03] Script started
+[2025-02-18 23:13:03] Received input - Data: {
+    "raw": "{\"amount\":800,\"loan_id\":\"105\",\"email\":\"ema04hh@gmail.com\",\"percentage\":0.86,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 23:13:40] Script started
+[2025-02-18 23:13:40] Received input - Data: {
+    "raw": "{\"amount\":800,\"loan_id\":\"105\",\"email\":\"ema04hh@gmail.com\",\"percentage\":0.86,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-18 23:13:40] Creating Stripe checkout session - Data: {
+    "amount": 800,
+    "loan_id": 105,
+    "percentage": 0.85999999999999998667732370449812151491641998291015625,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": null
+}
+[2025-02-19 00:07:39] Script started
+[2025-02-19 00:07:39] Received input - Data: {
+    "raw": "{\"amount\":90000,\"loan_id\":\"105\",\"email\":\"ema04hh@gmail.com\",\"percentage\":96.77,\"extra_amount\":7006.800000000003,\"extra_earning\":350.34000000000015}"
+}
+[2025-02-19 00:07:39] Error processing contribution - Data: {
+    "error": "Maximum contribution allowed is $83,000.00",
+    "trace": "#0 {main}"
+}
+[2025-02-19 00:08:08] Script started
+[2025-02-19 00:08:08] Received input - Data: {
+    "raw": "{\"amount\":83000,\"loan_id\":\"105\",\"email\":\"ema04hh@gmail.com\",\"percentage\":89.25,\"extra_amount\":6.80000000000291,\"extra_earning\":0.3400000000001455}"
+}
+[2025-02-19 00:08:08] Creating Stripe checkout session - Data: {
+    "amount": 83000,
+    "loan_id": 105,
+    "percentage": 89.25,
+    "lender_id": 106,
+    "extra_amount": 6.800000000002899724904636968858540058135986328125,
+    "extra_earning": 0.340000000000150015555533400402055121958255767822265625,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-19 00:08:09] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1mHFcAFH5VpW8inmqLJ3pRZJeGFo4kOrqZMTEH6N0a7QyokywjhHWvZIq",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1mHFcAFH5VpW8inmqLJ3pRZJeGFo4kOrqZMTEH6N0a7QyokywjhHWvZIq#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-19 00:08:30] Script started
+[2025-02-19 00:08:30] Received input - Data: {
+    "raw": "{\"amount\":10000,\"loan_id\":\"104\",\"email\":\"ema04hh@gmail.com\",\"percentage\":50,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-19 00:08:30] Creating Stripe checkout session - Data: {
+    "amount": 10000,
+    "loan_id": 104,
+    "percentage": 50,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-19 00:08:31] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a19bR51GebNLNVbtPwKJeIVCxv9ByfgxU6KZfaKbbaAleDBYjANLLFgta2",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a19bR51GebNLNVbtPwKJeIVCxv9ByfgxU6KZfaKbbaAleDBYjANLLFgta2#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-19 00:08:58] Script started
+[2025-02-19 00:08:58] Received input - Data: {
+    "raw": "{\"amount\":13000,\"loan_id\":\"104\",\"email\":\"ema04hh@gmail.com\",\"percentage\":65,\"extra_amount\":3000,\"extra_earning\":150}"
+}
+[2025-02-19 00:08:58] Error processing contribution - Data: {
+    "error": "Maximum contribution allowed is $10,000.00",
+    "trace": "#0 {main}"
+}
+[2025-02-19 00:09:04] Script started
+[2025-02-19 00:09:04] Received input - Data: {
+    "raw": "{\"amount\":10000,\"loan_id\":\"104\",\"email\":\"ema04hh@gmail.com\",\"percentage\":50,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-19 00:09:04] Creating Stripe checkout session - Data: {
+    "amount": 10000,
+    "loan_id": 104,
+    "percentage": 50,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-19 00:09:04] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1YBrHQuzG36oxWLEtx6lmCDowtRlDmTJRn8Dmmqw6Nh4KIaR4H97wYRHf",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1YBrHQuzG36oxWLEtx6lmCDowtRlDmTJRn8Dmmqw6Nh4KIaR4H97wYRHf#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-19 03:59:20] Script started
+[2025-02-19 03:59:20] Received input - Data: {
+    "raw": "{\"amount\":40000,\"loan_id\":\"103\",\"email\":\"ema04hh@gmail.com\",\"percentage\":51.28,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-19 03:59:20] Creating Stripe checkout session - Data: {
+    "amount": 40000,
+    "loan_id": 103,
+    "percentage": 51.280000000000001136868377216160297393798828125,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-19 03:59:21] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1aRHU6uF2oDxK8nd4bJZZbDZj22txbGrthNV7erGof1dl2YYkB11WpbvG",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1aRHU6uF2oDxK8nd4bJZZbDZj22txbGrthNV7erGof1dl2YYkB11WpbvG#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-19 04:02:47] Script started
+[2025-02-19 04:02:47] Received input - Data: {
+    "raw": "{\"amount\":20000,\"loan_id\":\"103\",\"email\":\"ema04hh@gmail.com\",\"percentage\":25.64,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-19 04:02:47] Creating Stripe checkout session - Data: {
+    "amount": 20000,
+    "loan_id": 103,
+    "percentage": 25.6400000000000005684341886080801486968994140625,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-19 04:02:48] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1D9LCs31Jxquo58PKcVjahPOSiZTJdvQeXWHeGNSkBBJ8TgqOFAa47kX7",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1D9LCs31Jxquo58PKcVjahPOSiZTJdvQeXWHeGNSkBBJ8TgqOFAa47kX7#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-19 04:07:54] Script started
+[2025-02-19 04:07:54] Received input - Data: {
+    "raw": "{\"amount\":20000,\"loan_id\":\"103\",\"email\":\"ema04hh@gmail.com\",\"percentage\":25.64,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-19 04:07:54] Creating Stripe checkout session - Data: {
+    "amount": 20000,
+    "loan_id": 103,
+    "percentage": 25.6400000000000005684341886080801486968994140625,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-19 04:07:55] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1HQPbL4NgZ4E9RzACeFtObgNN7Bc7bQueAa6qRZwYCV2N6n1RrTsIIFns",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1HQPbL4NgZ4E9RzACeFtObgNN7Bc7bQueAa6qRZwYCV2N6n1RrTsIIFns#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-19 04:08:27] Script started
+[2025-02-19 04:08:27] Received input - Data: {
+    "raw": "{\"amount\":30000,\"loan_id\":\"103\",\"email\":\"ema04hh@gmail.com\",\"percentage\":38.46,\"extra_amount\":11997.599999999999,\"extra_earning\":599.88}"
+}
+[2025-02-19 04:08:27] Error processing contribution - Data: {
+    "error": "Maximum contribution allowed is $18,000.00",
+    "trace": "#0 {main}"
+}
+[2025-02-19 04:08:53] Script started
+[2025-02-19 04:08:53] Received input - Data: {
+    "raw": "{\"amount\":18000,\"loan_id\":\"103\",\"email\":\"ema04hh@gmail.com\",\"percentage\":23.08,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-19 04:08:53] Creating Stripe checkout session - Data: {
+    "amount": 18000,
+    "loan_id": 103,
+    "percentage": 23.0799999999999982946974341757595539093017578125,
+    "lender_id": 106,
+    "extra_amount": 0,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-19 04:08:54] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1N1F7mAhV017h3vL62iuGE8WZvksEMyHNeu3LtGFCmddB0D1BrM9GDdFy",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1N1F7mAhV017h3vL62iuGE8WZvksEMyHNeu3LtGFCmddB0D1BrM9GDdFy#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-19 04:46:47] Script started
+[2025-02-19 04:46:47] Received input - Data: {
+    "raw": "{\"amount\":50000,\"loan_id\":\"102\",\"email\":\"ema04hh@gmail.com\",\"percentage\":75.76,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-19 04:46:47] Creating Stripe checkout session - Data: {
+    "amount": 50000,
+    "regular_contribution": 50000,
+    "extra_amount": 0,
+    "loan_id": 102,
+    "percentage": 75.7600000000000051159076974727213382720947265625,
+    "lender_id": 106,
+    "extra_earning": 0,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-19 04:46:48] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1oroD96YJJCJxcBZ77oPc5WOPnmWYv8DiYo0j0LPhtjZlBBuFMWl5Tdb2",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1oroD96YJJCJxcBZ77oPc5WOPnmWYv8DiYo0j0LPhtjZlBBuFMWl5Tdb2#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-19 04:47:04] Script started
+[2025-02-19 04:47:04] Received input - Data: {
+    "raw": "{\"amount\":20000,\"loan_id\":\"102\",\"email\":\"ema04hh@gmail.com\",\"percentage\":24.24,\"extra_amount\":4001.5999999999985,\"extra_earning\":200.07999999999993}"
+}
+[2025-02-19 04:47:04] Creating Stripe checkout session - Data: {
+    "amount": 20000,
+    "regular_contribution": 16000,
+    "extra_amount": 4000,
+    "loan_id": 102,
+    "percentage": 24.239999999999998436805981327779591083526611328125,
+    "lender_id": 106,
+    "extra_earning": 200,
+    "borrower_email": "ema04hh@gmail.com"
+}
+[2025-02-19 04:47:05] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a10C4mBIkpK4eVshAatkMMP7l7CiUWXxoIXXgvXrRRjEYpdo4K7fMTE9Wa",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a10C4mBIkpK4eVshAatkMMP7l7CiUWXxoIXXgvXrRRjEYpdo4K7fMTE9Wa#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-22 06:33:33] Script started
+[2025-02-22 06:33:33] Received input - Data: {
+    "raw": "{\"amount\":6000,\"loan_id\":\"118\",\"email\":\"mavaeliakim@gmail.com\",\"percentage\":8.57,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-22 06:33:33] Error processing contribution - Data: {
+    "error": "Error: funding Amount exceeding loan amount\/ accepted amount. Allowed range: greater than 0 and up to a maximum of Rs500",
+    "trace": "#0 {main}"
+}
+[2025-02-22 06:45:11] Script started
+[2025-02-22 06:45:11] Received input - Data: {
+    "raw": "{\"amount\":6000,\"loan_id\":\"118\",\"email\":\"mavaeliakim@gmail.com\",\"percentage\":8.57,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-22 06:45:11] Error processing contribution - Data: {
+    "error": "Loan is not available for contribution",
+    "trace": "#0 {main}"
+}
+[2025-02-22 06:45:52] Script started
+[2025-02-22 06:45:52] Received input - Data: {
+    "raw": "{\"amount\":60000,\"loan_id\":\"118\",\"email\":\"mavaeliakim@gmail.com\",\"percentage\":85.71,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-22 06:45:52] Creating Stripe checkout session - Data: {
+    "amount": 60000,
+    "loan_id": 118,
+    "percentage": 85.7099999999999937472239253111183643341064453125,
+    "lender_id": 106,
+    "borrower_email": "mavaeliakim@gmail.com"
+}
+[2025-02-22 06:45:53] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1Wf4DBK2gFxo8uMpYJtOiWqX6ZdJHlz5E9AFFH54As3MdjQRh9dtkPwxN",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1Wf4DBK2gFxo8uMpYJtOiWqX6ZdJHlz5E9AFFH54As3MdjQRh9dtkPwxN#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-23 21:30:32] Script started
+[2025-02-23 21:30:32] Received input - Data: {
+    "raw": "{\"amount\":6000,\"loan_id\":\"120\",\"email\":\"itachimav@gmail.com\",\"percentage\":17.65,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-23 21:30:32] Creating Stripe checkout session - Data: {
+    "amount": 6000,
+    "loan_id": 120,
+    "percentage": 17.64999999999999857891452847979962825775146484375,
+    "lender_id": 106,
+    "borrower_email": "itachimav@gmail.com"
+}
+[2025-02-23 21:30:33] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1rnaR06m4BV7JdhzTLjtGYI6mVYDh7HJ4ZNz47vb1z4KglAljPSDpsHZ0",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1rnaR06m4BV7JdhzTLjtGYI6mVYDh7HJ4ZNz47vb1z4KglAljPSDpsHZ0#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-23 21:46:58] Script started
+[2025-02-23 21:46:58] Received input - Data: {
+    "raw": "{\"amount\":4000,\"loan_id\":\"121\",\"email\":\"itachimav@gmail.com\",\"percentage\":10.26,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-23 21:46:58] Creating Stripe checkout session - Data: {
+    "amount": 4000,
+    "loan_id": 121,
+    "percentage": 10.2599999999999997868371792719699442386627197265625,
+    "lender_id": 106,
+    "borrower_email": "itachimav@gmail.com"
+}
+[2025-02-23 21:46:58] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1uIFOXcqrtr5InjrOTjlWW58eu0y2xUgtt80eJlCFSvmghCnW5oD7a3CG",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1uIFOXcqrtr5InjrOTjlWW58eu0y2xUgtt80eJlCFSvmghCnW5oD7a3CG#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-23 22:29:27] Script started
+[2025-02-23 22:29:27] Received input - Data: {
+    "raw": "{\"amount\":40000,\"loan_id\":\"121\",\"email\":\"itachimav@gmail.com\",\"percentage\":89.74,\"extra_amount\":5001.4000000000015,\"extra_earning\":250.07000000000008}"
+}
+[2025-02-23 22:29:27] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs35000.",
+    "trace": "#0 {main}"
+}
+[2025-02-23 22:29:41] Script started
+[2025-02-23 22:29:41] Received input - Data: {
+    "raw": "{\"amount\":35000,\"loan_id\":\"121\",\"email\":\"itachimav@gmail.com\",\"percentage\":89.74,\"extra_amount\":1.4000000000014552,\"extra_earning\":0.07000000000007277}"
+}
+[2025-02-23 22:29:41] Creating Stripe checkout session - Data: {
+    "amount": 35000,
+    "loan_id": 121,
+    "percentage": 89.7399999999999948840923025272786617279052734375,
+    "lender_id": 106,
+    "borrower_email": "itachimav@gmail.com"
+}
+[2025-02-23 22:29:42] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1KNz7by9lvTPWCZ0SGVfjpgStHjay5PSXdF7yLwgrJF4CvtUkK1mq3FHi",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1KNz7by9lvTPWCZ0SGVfjpgStHjay5PSXdF7yLwgrJF4CvtUkK1mq3FHi#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-23 22:30:06] Script started
+[2025-02-23 22:30:06] Received input - Data: {
+    "raw": "{\"amount\":34000,\"loan_id\":\"120\",\"email\":\"itachimav@gmail.com\",\"percentage\":82.35,\"extra_amount\":6001,\"extra_earning\":300.05}"
+}
+[2025-02-23 22:30:06] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs28000.",
+    "trace": "#0 {main}"
+}
+[2025-02-23 22:30:18] Script started
+[2025-02-23 22:30:18] Received input - Data: {
+    "raw": "{\"amount\":28000,\"loan_id\":\"120\",\"email\":\"itachimav@gmail.com\",\"percentage\":82.35,\"extra_amount\":1,\"extra_earning\":0.05}"
+}
+[2025-02-23 22:30:18] Creating Stripe checkout session - Data: {
+    "amount": 28000,
+    "loan_id": 120,
+    "percentage": 82.349999999999994315658113919198513031005859375,
+    "lender_id": 106,
+    "borrower_email": "itachimav@gmail.com"
+}
+[2025-02-23 22:30:19] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1GmUznPfJh6nZv0dQJ9ma18MCCLrSUIZfHA1cfbT5fezH59mHDDl8MPP6",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1GmUznPfJh6nZv0dQJ9ma18MCCLrSUIZfHA1cfbT5fezH59mHDDl8MPP6#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-23 22:30:41] Script started
+[2025-02-23 22:30:41] Received input - Data: {
+    "raw": "{\"amount\":40000,\"loan_id\":\"119\",\"email\":\"itachimav@gmail.com\",\"percentage\":100,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-23 22:30:41] Creating Stripe checkout session - Data: {
+    "amount": 40000,
+    "loan_id": 119,
+    "percentage": 100,
+    "lender_id": 106,
+    "borrower_email": "itachimav@gmail.com"
+}
+[2025-02-23 22:30:42] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1ivvO8hLj99uMRk5cPTYNFLjLBPKsniJJvuhZcqzYsaGThpITjJvlV3dl",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1ivvO8hLj99uMRk5cPTYNFLjLBPKsniJJvuhZcqzYsaGThpITjJvlV3dl#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-24 09:33:59] Script started
+[2025-02-24 09:33:59] Received input - Data: {
+    "raw": "{\"amount\":80000,\"loan_id\":\"1\",\"email\":\"swaema04@gmail.com\",\"percentage\":100,\"extra_amount\":70000,\"extra_earning\":3500}"
+}
+[2025-02-24 09:33:59] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs10000.",
+    "trace": "#0 {main}"
+}
+[2025-02-24 09:34:09] Script started
+[2025-02-24 09:34:09] Received input - Data: {
+    "raw": "{\"amount\":8000,\"loan_id\":\"1\",\"email\":\"swaema04@gmail.com\",\"percentage\":80,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-24 09:34:09] Creating Stripe checkout session - Data: {
+    "amount": 8000,
+    "loan_id": 1,
+    "percentage": 80,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-24 09:34:15] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1uiWIyfp0GPsz3cxKxURNtY2TpEP8cia7PMTGdu4tSTu86HFcTptyPgP0",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1uiWIyfp0GPsz3cxKxURNtY2TpEP8cia7PMTGdu4tSTu86HFcTptyPgP0#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-24 10:45:58] Script started
+[2025-02-24 10:45:58] Received input - Data: {
+    "raw": "{\"amount\":40000,\"loan_id\":\"2\",\"email\":\"swaema04@gmail.com\",\"percentage\":80,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-24 10:45:58] Creating Stripe checkout session - Data: {
+    "amount": 40000,
+    "loan_id": 2,
+    "percentage": 80,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-24 10:45:59] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1rqGQmcESkPmJymRbraCCGHpWzy8evXqFL85c02PXVtfqZJOuVGjNm6pr",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1rqGQmcESkPmJymRbraCCGHpWzy8evXqFL85c02PXVtfqZJOuVGjNm6pr#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-24 11:17:47] Script started
+[2025-02-24 11:17:47] Received input - Data: {
+    "raw": "{\"amount\":30000,\"loan_id\":\"4\",\"email\":\"jhaanvigokool26@gmail.com\",\"percentage\":75,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-24 11:17:47] Creating Stripe checkout session - Data: {
+    "amount": 30000,
+    "loan_id": 4,
+    "percentage": 75,
+    "lender_id": 113,
+    "borrower_email": "jhaanvigokool26@gmail.com"
+}
+[2025-02-24 11:17:48] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1bE7mcmakOmjiAvjs1IduASxVFD6W3f3DIOWZrIb3YWO40oUDFJNDH8Q8",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1bE7mcmakOmjiAvjs1IduASxVFD6W3f3DIOWZrIb3YWO40oUDFJNDH8Q8#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-24 11:19:24] Script started
+[2025-02-24 11:19:24] Received input - Data: {
+    "raw": "{\"amount\":20000,\"loan_id\":\"4\",\"email\":\"jhaanvigokool26@gmail.com\",\"percentage\":25,\"extra_amount\":10000,\"extra_earning\":500}"
+}
+[2025-02-24 11:19:24] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs10000.",
+    "trace": "#0 {main}"
+}
+[2025-02-24 11:23:22] Script started
+[2025-02-24 11:23:22] Received input - Data: {
+    "raw": "{\"amount\":1000,\"loan_id\":\"4\",\"email\":\"jhaanvigokool26@gmail.com\",\"percentage\":2.5,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-24 11:23:22] Creating Stripe checkout session - Data: {
+    "amount": 1000,
+    "loan_id": 4,
+    "percentage": 2.5,
+    "lender_id": 114,
+    "borrower_email": "jhaanvigokool26@gmail.com"
+}
+[2025-02-24 11:23:23] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1tkjfmmmdmrhM7dAwf8LCm8dVTJwmTh2dFHdEBNMt7ooi0y9xXOjLydTx",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1tkjfmmmdmrhM7dAwf8LCm8dVTJwmTh2dFHdEBNMt7ooi0y9xXOjLydTx#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-24 11:23:48] Script started
+[2025-02-24 11:23:48] Received input - Data: {
+    "raw": "{\"amount\":9000,\"loan_id\":\"4\",\"email\":\"jhaanvigokool26@gmail.com\",\"percentage\":22.5,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-24 11:23:48] Creating Stripe checkout session - Data: {
+    "amount": 9000,
+    "loan_id": 4,
+    "percentage": 22.5,
+    "lender_id": 114,
+    "borrower_email": "jhaanvigokool26@gmail.com"
+}
+[2025-02-24 11:23:49] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1ahYea46Fj5XICXDAV6ppi8PQv13n9nmi9YgxqclQCa20ab3bfN7twJn3",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1ahYea46Fj5XICXDAV6ppi8PQv13n9nmi9YgxqclQCa20ab3bfN7twJn3#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-24 13:56:23] Script started
+[2025-02-24 13:56:23] Received input - Data: {
+    "raw": "{\"amount\":41000,\"loan_id\":\"4\",\"email\":\"jhaanvigokool26@gmail.com\",\"percentage\":100,\"extra_amount\":1000,\"extra_earning\":50}"
+}
+[2025-02-24 13:56:23] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs40000.",
+    "trace": "#0 {main}"
+}
+[2025-02-24 14:01:06] Script started
+[2025-02-24 14:01:06] Received input - Data: {
+    "raw": "{\"amount\":30000,\"loan_id\":\"4\",\"email\":\"jhaanvigokool26@gmail.com\",\"percentage\":75,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-24 14:01:06] Creating Stripe checkout session - Data: {
+    "amount": 30000,
+    "loan_id": 4,
+    "percentage": 75,
+    "lender_id": 113,
+    "borrower_email": "jhaanvigokool26@gmail.com"
+}
+[2025-02-24 14:01:07] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1U1hsWckBrYqY3SKvEFhVJ4WIMEocOCfkTxFrAwH1uS4OVnO0uPkrWhSF",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1U1hsWckBrYqY3SKvEFhVJ4WIMEocOCfkTxFrAwH1uS4OVnO0uPkrWhSF#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-24 14:02:05] Script started
+[2025-02-24 14:02:05] Received input - Data: {
+    "raw": "{\"amount\":10000,\"loan_id\":\"4\",\"email\":\"jhaanvigokool26@gmail.com\",\"percentage\":25,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-24 14:02:05] Creating Stripe checkout session - Data: {
+    "amount": 10000,
+    "loan_id": 4,
+    "percentage": 25,
+    "lender_id": 113,
+    "borrower_email": "jhaanvigokool26@gmail.com"
+}
+[2025-02-24 14:02:06] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1ND0z1OS0WueZQWoa43sIqOVfRsnhzZjfwgB8PbAOiTZjsvvSS5jZiIo2",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1ND0z1OS0WueZQWoa43sIqOVfRsnhzZjfwgB8PbAOiTZjsvvSS5jZiIo2#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-24 14:09:29] Script started
+[2025-02-24 14:09:29] Received input - Data: {
+    "raw": "{\"amount\":30000,\"loan_id\":\"5\",\"email\":\"jhaanvigokool26@gmail.com\",\"percentage\":100,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-24 14:09:29] Creating Stripe checkout session - Data: {
+    "amount": 30000,
+    "loan_id": 5,
+    "percentage": 100,
+    "lender_id": 113,
+    "borrower_email": "jhaanvigokool26@gmail.com"
+}
+[2025-02-24 14:09:30] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1DglLyQ6SsTBceoczrmKSlFNAVTgAgIy0m9kZdjdtnyGYdhTrnGm5ibS3",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1DglLyQ6SsTBceoczrmKSlFNAVTgAgIy0m9kZdjdtnyGYdhTrnGm5ibS3#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-24 14:51:46] Script started
+[2025-02-24 14:51:46] Received input - Data: {
+    "raw": "{\"amount\":15000,\"loan_id\":\"6\",\"email\":\"jhaanvigokool26@gmail.com\",\"percentage\":100,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-24 14:51:46] Creating Stripe checkout session - Data: {
+    "amount": 15000,
+    "loan_id": 6,
+    "percentage": 100,
+    "lender_id": 114,
+    "borrower_email": "jhaanvigokool26@gmail.com"
+}
+[2025-02-24 14:51:47] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1fc4jUeW6kHBl3fI5xagt0mEgM0WkBPUgqkyKQ2GVdcxIvL89VW3sXdES",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1fc4jUeW6kHBl3fI5xagt0mEgM0WkBPUgqkyKQ2GVdcxIvL89VW3sXdES#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-24 19:46:37] Script started
+[2025-02-24 19:46:38] Received input - Data: {
+    "raw": "{\"amount\":200000,\"loan_id\":\"9\",\"email\":\"swaema04@gmail.com\",\"percentage\":100,\"extra_amount\":170000,\"extra_earning\":8500}"
+}
+[2025-02-24 19:46:38] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs30000.",
+    "trace": "#0 {main}"
+}
+[2025-02-24 19:46:45] Script started
+[2025-02-24 19:46:45] Received input - Data: {
+    "raw": "{\"amount\":20000,\"loan_id\":\"9\",\"email\":\"swaema04@gmail.com\",\"percentage\":66.67,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-24 19:46:45] Creating Stripe checkout session - Data: {
+    "amount": 20000,
+    "loan_id": 9,
+    "percentage": 66.67,
+    "lender_id": 114,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-24 19:46:46] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1NOQMdVrnNC9yrCXd6JdfB2d4X9OLCgw4fGYGSFuQD0ef4nwPYik9K6Hk",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1NOQMdVrnNC9yrCXd6JdfB2d4X9OLCgw4fGYGSFuQD0ef4nwPYik9K6Hk#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-24 20:12:14] Script started
+[2025-02-24 20:12:14] Received input - Data: {
+    "raw": "{\"amount\":10001,\"loan_id\":\"9\",\"email\":\"swaema04@gmail.com\",\"percentage\":33.33,\"extra_amount\":1.0000099999997474,\"extra_earning\":0.050000499999987374}"
+}
+[2025-02-24 20:12:14] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs10000.",
+    "trace": "#0 {main}"
+}
+[2025-02-24 20:12:21] Script started
+[2025-02-24 20:12:21] Received input - Data: {
+    "raw": "{\"amount\":20000,\"loan_id\":\"9\",\"email\":\"swaema04@gmail.com\",\"percentage\":33.33,\"extra_amount\":10000.00001,\"extra_earning\":500.0000005}"
+}
+[2025-02-24 20:12:21] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs10000.",
+    "trace": "#0 {main}"
+}
+[2025-02-24 20:12:37] Script started
+[2025-02-24 20:12:37] Received input - Data: {
+    "raw": "{\"amount\":10000,\"loan_id\":\"9\",\"email\":\"swaema04@gmail.com\",\"percentage\":33.33,\"extra_amount\":0.000009999999747378752,\"extra_earning\":4.999999873689376e-7}"
+}
+[2025-02-24 20:12:37] Creating Stripe checkout session - Data: {
+    "amount": 10000,
+    "loan_id": 9,
+    "percentage": 33.33,
+    "lender_id": 114,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-24 20:12:38] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a180Uabk8tlxu1DICaVMT0cgCiQZ8QZqYuEa6f35is9oxfoLB0Nz0Qm3Di",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a180Uabk8tlxu1DICaVMT0cgCiQZ8QZqYuEa6f35is9oxfoLB0Nz0Qm3Di#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 10:01:08] Script started
+[2025-02-25 10:01:08] Received input - Data: {
+    "raw": "{\"amount\":20000,\"loan_id\":\"10\",\"email\":\"swaema04@gmail.com\",\"percentage\":40,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 10:01:08] Creating Stripe checkout session - Data: {
+    "amount": 20000,
+    "loan_id": 10,
+    "percentage": 40,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 10:01:13] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1ZUvmAbS5KA2q2rqkcu2pbwIDAyDpz1M85oAhyGQJzknHCf0WCYLr6CIw",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1ZUvmAbS5KA2q2rqkcu2pbwIDAyDpz1M85oAhyGQJzknHCf0WCYLr6CIw#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 10:02:23] Script started
+[2025-02-25 10:02:23] Received input - Data: {
+    "raw": "{\"amount\":300000,\"loan_id\":\"10\",\"email\":\"swaema04@gmail.com\",\"percentage\":60,\"extra_amount\":270000,\"extra_earning\":13500}"
+}
+[2025-02-25 10:02:23] Error processing contribution - Data: {
+    "error": "Error: funding amount exceeding loan's accepted amount. \n                 Allowed range: greater than 0 and up to a maximum of Rs30000.",
+    "trace": "#0 {main}"
+}
+[2025-02-25 10:02:28] Script started
+[2025-02-25 10:02:28] Received input - Data: {
+    "raw": "{\"amount\":30000,\"loan_id\":\"10\",\"email\":\"swaema04@gmail.com\",\"percentage\":60,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 10:02:28] Creating Stripe checkout session - Data: {
+    "amount": 30000,
+    "loan_id": 10,
+    "percentage": 60,
+    "lender_id": 114,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 10:02:33] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a19kP1eDFVd854Gn3DJBimQOHPfkWjMEMKfYo71VOyXdERlXJw70Kj96cv",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a19kP1eDFVd854Gn3DJBimQOHPfkWjMEMKfYo71VOyXdERlXJw70Kj96cv#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 12:51:32] Script started
+[2025-02-25 12:51:32] Received input - Data: {
+    "raw": "{\"amount\":30000,\"loan_id\":\"11\",\"email\":\"swaema04@gmail.com\",\"percentage\":60,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 12:51:32] Creating Stripe checkout session - Data: {
+    "amount": 30000,
+    "loan_id": 11,
+    "percentage": 60,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 12:51:33] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a14bDBA2CcYe9Mvyfy4tF6VfldCsYIMdeAgbI7ldPG58wXfmtancdYhRbq",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a14bDBA2CcYe9Mvyfy4tF6VfldCsYIMdeAgbI7ldPG58wXfmtancdYhRbq#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 12:52:01] Script started
+[2025-02-25 12:52:01] Received input - Data: {
+    "raw": "{\"amount\":20000,\"loan_id\":\"11\",\"email\":\"swaema04@gmail.com\",\"percentage\":40,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 12:52:01] Creating Stripe checkout session - Data: {
+    "amount": 20000,
+    "loan_id": 11,
+    "percentage": 40,
+    "lender_id": 114,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 12:52:02] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1rV4M91isfaUqe0YqzkTk1MocgKDmjX0sNNUUCTYc1S6uFScpkxhnoYbJ",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1rV4M91isfaUqe0YqzkTk1MocgKDmjX0sNNUUCTYc1S6uFScpkxhnoYbJ#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-25 12:52:30] Script started
+[2025-02-25 12:52:30] Received input - Data: {
+    "raw": "{\"amount\":20000,\"loan_id\":\"11\",\"email\":\"swaema04@gmail.com\",\"percentage\":40,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-25 12:52:30] Creating Stripe checkout session - Data: {
+    "amount": 20000,
+    "loan_id": 11,
+    "percentage": 40,
+    "lender_id": 114,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-25 12:52:31] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1DkujRhB8t5xOUCCxhOVd27IpqJtPFwipdy6dUpNDm1tkYYngZGSi1qFj",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1DkujRhB8t5xOUCCxhOVd27IpqJtPFwipdy6dUpNDm1tkYYngZGSi1qFj#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}

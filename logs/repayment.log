@@ -1,0 +1,175 @@
+[2025-02-19 03:55:05] Processing repayment - Data: {
+    "loan_id": "106",
+    "amount": 238.8899999999999863575794734060764312744140625,
+    "principal": "139",
+    "interest": 134.82999999999998408384271897375583648681640625,
+    "admin_fee": "4.78"
+}
+[2025-02-19 03:55:05] Payment processed successfully - Data: {
+    "loan_id": "106",
+    "amount": 238.8899999999999863575794734060764312744140625
+}
+[2025-02-19 03:57:26] Payment processing failed - Data: {
+    "error": "Payment verification failed",
+    "trace": "#0 {main}"
+}
+[2025-02-19 03:57:47] Processing repayment - Data: {
+    "loan_id": "105",
+    "amount": 3751.670000000000072759576141834259033203125,
+    "principal": "2584",
+    "interest": 28837.43999999999869032762944698333740234375,
+    "admin_fee": "75.03"
+}
+[2025-02-19 03:57:47] Payment processed successfully - Data: {
+    "loan_id": "105",
+    "amount": 3751.670000000000072759576141834259033203125
+}
+[2025-02-23 22:32:37] Processing repayment - Data: {
+    "loan_id": "121",
+    "amount": 1199.170000000000072759576141834259033203125,
+    "principal": "1084",
+    "interest": 1018.9599999999999226929503493010997772216796875,
+    "admin_fee": "23.98"
+}
+[2025-02-23 22:32:55] Payment processed successfully - Data: {
+    "loan_id": "121",
+    "amount": 1199.170000000000072759576141834259033203125
+}
+[2025-02-23 22:35:11] Processing repayment - Data: {
+    "loan_id": "121",
+    "amount": 1199.170000000000072759576141834259033203125,
+    "principal": "1084",
+    "interest": 1018.9599999999999226929503493010997772216796875,
+    "admin_fee": "23.98"
+}
+[2025-02-23 22:35:26] Payment processed successfully - Data: {
+    "loan_id": "121",
+    "amount": 1199.170000000000072759576141834259033203125
+}
+[2025-02-24 10:42:36] Payment processing failed - Data: {
+    "error": "Payment verification failed",
+    "trace": "#0 {main}"
+}
+[2025-02-24 15:14:14] Processing repayment - Data: {
+    "loan_id": "5",
+    "amount": 16550,
+    "principal": "15000",
+    "interest": 187500,
+    "admin_fee": "331"
+}
+[2025-02-24 15:14:20] Payment processed successfully - Data: {
+    "loan_id": "5",
+    "amount": 16550
+}
+[2025-02-24 20:26:00] Payment processing failed - Data: {
+    "error": "Payment verification failed",
+    "trace": "#0 {main}"
+}
+[2025-02-24 20:34:06] Payment processing failed - Data: {
+    "error": "Payment verification failed",
+    "trace": "#0 {main}"
+}
+[2025-02-24 20:35:55] Payment processing failed - Data: {
+    "error": "Payment verification failed",
+    "trace": "#0 {main}"
+}
+[2025-02-24 20:39:12] Payment processing failed - Data: {
+    "error": "Payment verification failed",
+    "trace": "#0 {main}"
+}
+[2025-02-24 20:41:49] Payment processing failed - Data: {
+    "error": "Payment verification failed",
+    "trace": "#0 {main}"
+}
+[2025-02-24 20:42:10] Payment processing failed - Data: {
+    "error": "Payment verification failed",
+    "trace": "#0 {main}"
+}
+[2025-02-24 21:07:20] Processing repayment - Data: {
+    "loan_id": "9",
+    "amount": 16550,
+    "principal": "15000",
+    "interest": 187500,
+    "admin_fee": "331"
+}
+[2025-02-24 21:07:29] Payment processed successfully - Data: {
+    "loan_id": "9",
+    "amount": 16550
+}
+[2025-02-25 10:07:15] Processing repayment - Data: {
+    "loan_id": "10",
+    "amount": 53208,
+    "principal": "50000",
+    "interest": 1104000,
+    "admin_fee": "1064.16"
+}
+[2025-02-25 10:07:23] Payment processed successfully - Data: {
+    "loan_id": "10",
+    "amount": 53208
+}
+[2025-02-25 12:48:09] Processing repayment - Data: {
+    "loan_id": "9",
+    "amount": 16550,
+    "principal": "15000",
+    "interest": 187500,
+    "admin_fee": "331"
+}
+[2025-02-25 12:48:17] Payment processed successfully - Data: {
+    "loan_id": "9",
+    "amount": 16550
+}
+[2025-02-25 12:57:13] Processing repayment - Data: {
+    "loan_id": "11",
+    "amount": 10808.2,
+    "principal": "10000",
+    "interest": 60800,
+    "admin_fee": "216.16"
+}
+[2025-02-25 12:57:21] Payment processed successfully - Data: {
+    "loan_id": "11",
+    "amount": 10808.2
+}
+[2025-02-25 12:57:53] Processing repayment - Data: {
+    "loan_id": "11",
+    "amount": 10808.2,
+    "principal": "10000",
+    "interest": 60800,
+    "admin_fee": "216.16"
+}
+[2025-02-25 12:58:01] Payment processed successfully - Data: {
+    "loan_id": "11",
+    "amount": 10808.2
+}
+[2025-02-25 12:58:23] Processing repayment - Data: {
+    "loan_id": "11",
+    "amount": 10808.2,
+    "principal": "10000",
+    "interest": 60800,
+    "admin_fee": "216.16"
+}
+[2025-02-25 12:58:32] Payment processed successfully - Data: {
+    "loan_id": "11",
+    "amount": 10808.2
+}
+[2025-02-25 12:58:53] Processing repayment - Data: {
+    "loan_id": "11",
+    "amount": 10808.2,
+    "principal": "10000",
+    "interest": 60800,
+    "admin_fee": "216.16"
+}
+[2025-02-25 12:59:01] Payment processed successfully - Data: {
+    "loan_id": "11",
+    "amount": 10808.2
+}
+[2025-02-25 12:59:27] Processing repayment - Data: {
+    "loan_id": "11",
+    "amount": 10808.2,
+    "principal": "10000",
+    "interest": 60800,
+    "admin_fee": "216.16"
+}
+[2025-02-25 12:59:34] Payment processed successfully - Data: {
+    "loan_id": "11",
+    "amount": 10808.2
+}

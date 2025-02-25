@@ -1,0 +1,18 @@
+[19-Feb-2025 18:39:11 Indian/Mauritius] Attempting to send password reset email to: itachimav@gmail.com
+[19-Feb-2025 18:39:11 Indian/Mauritius] Mail send result: Mail::__set_state(array(
+))
+[19-Feb-2025 18:39:11 Indian/Mauritius] Failed to send password reset email. Mail result: Mail::__set_state(array(
+))
+[19-Feb-2025 18:56:10 Indian/Mauritius] PHP Fatal error:  Uncaught Error: Call to undefined method Mail::sendMail() in /Applications/XAMPP/xamppfiles/htdocs/Classes/User.php:532
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/forgetPassword.php(28): User::forgetPassword('itachimav@gmail...')
+#1 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/Classes/User.php on line 532
+[24-Feb-2025 08:12:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'credit_management' in C:\xampp\htdocs\Classes\Database.php:7
+Stack trace:
+#0 C:\xampp\htdocs\Classes\Database.php(7): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'credit_manageme...')
+#1 C:\xampp\htdocs\Classes\User.php(361): Database::getConnection()
+#2 C:\xampp\htdocs\Classes\UserAuth.php(18): User::findByEmail('swaema04@gmail....')
+#3 C:\xampp\htdocs\login.php(31): UserAuth::login('swaema04@gmail....', 'Swaema04@')
+#4 {main}
+  thrown in C:\xampp\htdocs\Classes\Database.php on line 7

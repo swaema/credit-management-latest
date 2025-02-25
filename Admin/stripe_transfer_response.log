@@ -1,0 +1,34 @@
+Stripe\Transfer Object
+(
+    [id] => tr_1QjH7eBCf2ajpOS4S0T2mU0K
+    [object] => transfer
+    [amount] => 5000000
+    [amount_reversed] => 0
+    [balance_transaction] => txn_1QjH7eBCf2ajpOS4xC1Nl5Cm
+    [created] => 1737364698
+    [currency] => gbp
+    [description] => 
+    [destination] => acct_1Qiy5GL2AYu9PwEY
+    [destination_payment] => py_1QjH7eL2AYu9PwEYJKI5rKdt
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+        )
+
+    [reversals] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/transfers/tr_1QjH7eBCf2ajpOS4S0T2mU0K/reversals
+        )
+
+    [reversed] => 
+    [source_transaction] => 
+    [source_type] => card
+    [transfer_group] => payment_intent_transfer
+)

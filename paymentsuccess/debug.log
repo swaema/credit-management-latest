@@ -1,0 +1,553 @@
+[2025-02-18 20:45:40] Script started
+[2025-02-18 20:45:40] Include path: .:/Applications/XAMPP/xamppfiles/lib/php
+[2025-02-18 20:45:40] Found file: ../Classes/Stripe.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Stripe.php
+[2025-02-18 20:45:40] Found file: ../Classes/Database.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Database.php
+[2025-02-18 20:45:40] Found file: ../Classes/UserAuth.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/UserAuth.php
+[2025-02-18 20:45:40] Required files loaded
+[2025-02-18 20:45:40] Session data - Data: Array
+(
+    [user_status] => active
+    [user_id] => 106
+    [user_role] => lender
+    [user_email] => fatema.mounjir@gmail.com
+    [user_name] => len lender
+    [user_image] => uploads/users/106/profile_image/1737357672_girlIcon.png
+    [contribution_data] => Array
+        (
+            [amount] => 250
+            [loan_id] => 107
+            [percentage] => 12.5
+            [lender_id] => 106
+            [extra_amount] => 0
+            [extra_earning] => 0
+        )
+
+)
+
+[2025-02-18 20:45:40] Received input - Data: Array
+(
+    [raw] => {"amount":250,"loan_id":"107","email":"ema04hh@gmail.com","percentage":"12.50","extra_amount":0,"extra_earning":0}
+)
+
+[2025-02-18 20:45:40] Parsed input data - Data: Array
+(
+    [amount] => 250
+    [loan_id] => 107
+    [email] => ema04hh@gmail.com
+    [percentage] => 12.50
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 20:45:40] Loan check result - Data: Array
+(
+    [id] => 107
+    [user_id] => 105
+    [noOfInstallments] => 36
+    [interstRate] => 1
+    [grade] => A
+    [AnnualIncome] => 1111111
+    [loanAmount] => 2000
+    [loanPurpose] => credit_card
+    [employeementTenure] => 11
+    [Accepted_Date] => 
+    [status] => Accepted
+    [requested_at] => 2025-02-18 19:17:09
+    [InstallmentAmount] => 140.56
+    [TotalLoan] => 5060
+    [stripe_account_id] => 
+    [updated_at] => 2025-02-18 19:17:18
+    [total_funded] => 500
+)
+
+[2025-02-18 20:45:40] Creating Stripe order - Data: Array
+(
+    [amount] => 250
+    [loan_id] => 107
+    [percentage] => 12.5
+    [lender_id] => 106
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 20:45:40] About to create Stripe order
+[2025-02-18 20:45:41] Stripe response received - Data: Array
+(
+    [success] => 
+    [error] => No such destination: 'acct_1QthX6B2UpV2W2vM'
+)
+
+[2025-02-18 20:58:58] Script started
+[2025-02-18 20:58:58] Include path: .:/Applications/XAMPP/xamppfiles/lib/php
+[2025-02-18 20:58:58] Found file: ../Classes/Stripe.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Stripe.php
+[2025-02-18 20:58:58] Found file: ../Classes/Database.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Database.php
+[2025-02-18 20:58:58] Found file: ../Classes/UserAuth.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/UserAuth.php
+[2025-02-18 20:58:58] Required files loaded
+[2025-02-18 20:58:58] Session data - Data: Array
+(
+    [user_status] => active
+    [user_id] => 106
+    [user_role] => lender
+    [user_email] => fatema.mounjir@gmail.com
+    [user_name] => len lender
+    [user_image] => uploads/users/106/profile_image/1737357672_girlIcon.png
+    [contribution_data] => Array
+        (
+            [amount] => 250
+            [loan_id] => 107
+            [percentage] => 12.5
+            [lender_id] => 106
+            [extra_amount] => 0
+            [extra_earning] => 0
+        )
+
+)
+
+[2025-02-18 20:58:58] Received input - Data: Array
+(
+    [raw] => {"amount":250,"loan_id":"107","email":"ema04hh@gmail.com","percentage":"12.50","extra_amount":0,"extra_earning":0}
+)
+
+[2025-02-18 20:58:58] Parsed input data - Data: Array
+(
+    [amount] => 250
+    [loan_id] => 107
+    [email] => ema04hh@gmail.com
+    [percentage] => 12.50
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 20:58:58] Loan check result - Data: Array
+(
+    [id] => 107
+    [user_id] => 105
+    [noOfInstallments] => 36
+    [interstRate] => 1
+    [grade] => A
+    [AnnualIncome] => 1111111
+    [loanAmount] => 2000
+    [loanPurpose] => credit_card
+    [employeementTenure] => 11
+    [Accepted_Date] => 
+    [status] => Accepted
+    [requested_at] => 2025-02-18 19:17:09
+    [InstallmentAmount] => 140.56
+    [TotalLoan] => 5060
+    [stripe_account_id] => 
+    [updated_at] => 2025-02-18 19:17:18
+    [total_funded] => 500
+)
+
+[2025-02-18 20:58:58] Creating Stripe order - Data: Array
+(
+    [amount] => 250
+    [loan_id] => 107
+    [percentage] => 12.5
+    [lender_id] => 106
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 20:58:58] About to create Stripe order
+[2025-02-18 20:58:58] Stripe response received - Data: Array
+(
+    [success] => 
+    [error] => No such destination: 'acct_1QthX6B2UpV2W2vM'
+)
+
+[2025-02-18 20:59:54] Script started
+[2025-02-18 20:59:54] Include path: .:/Applications/XAMPP/xamppfiles/lib/php
+[2025-02-18 20:59:54] Found file: ../Classes/Stripe.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Stripe.php
+[2025-02-18 20:59:54] Found file: ../Classes/Database.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Database.php
+[2025-02-18 20:59:54] Found file: ../Classes/UserAuth.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/UserAuth.php
+[2025-02-18 20:59:54] Required files loaded
+[2025-02-18 20:59:54] Session data - Data: Array
+(
+    [user_status] => active
+    [user_id] => 106
+    [user_role] => lender
+    [user_email] => fatema.mounjir@gmail.com
+    [user_name] => len lender
+    [user_image] => uploads/users/106/profile_image/1737357672_girlIcon.png
+    [contribution_data] => Array
+        (
+            [amount] => 250
+            [loan_id] => 107
+            [percentage] => 12.5
+            [lender_id] => 106
+            [extra_amount] => 0
+            [extra_earning] => 0
+        )
+
+)
+
+[2025-02-18 20:59:54] Received input - Data: Array
+(
+    [raw] => {"amount":250,"loan_id":"107","email":"ema04hh@gmail.com","percentage":"12.50","extra_amount":0,"extra_earning":0}
+)
+
+[2025-02-18 20:59:54] Parsed input data - Data: Array
+(
+    [amount] => 250
+    [loan_id] => 107
+    [email] => ema04hh@gmail.com
+    [percentage] => 12.50
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 20:59:54] Loan check result - Data: Array
+(
+    [id] => 107
+    [user_id] => 105
+    [noOfInstallments] => 36
+    [interstRate] => 1
+    [grade] => A
+    [AnnualIncome] => 1111111
+    [loanAmount] => 2000
+    [loanPurpose] => credit_card
+    [employeementTenure] => 11
+    [Accepted_Date] => 
+    [status] => Accepted
+    [requested_at] => 2025-02-18 19:17:09
+    [InstallmentAmount] => 140.56
+    [TotalLoan] => 5060
+    [stripe_account_id] => 
+    [updated_at] => 2025-02-18 19:17:18
+    [total_funded] => 500
+)
+
+[2025-02-18 20:59:54] Creating Stripe order - Data: Array
+(
+    [amount] => 250
+    [loan_id] => 107
+    [percentage] => 12.5
+    [lender_id] => 106
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 20:59:54] About to create Stripe order
+[2025-02-18 20:59:55] Stripe response received - Data: Array
+(
+    [success] => 
+    [error] => No such destination: 'acct_1QthXW2vM'
+)
+
+[2025-02-18 21:02:58] Script started
+[2025-02-18 21:02:58] Include path: .:/Applications/XAMPP/xamppfiles/lib/php
+[2025-02-18 21:02:58] Found file: ../Classes/Stripe.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Stripe.php
+[2025-02-18 21:02:58] Found file: ../Classes/Database.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Database.php
+[2025-02-18 21:02:58] Found file: ../Classes/UserAuth.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/UserAuth.php
+[2025-02-18 21:02:58] Required files loaded
+[2025-02-18 21:02:58] Session data - Data: Array
+(
+    [user_status] => active
+    [user_id] => 106
+    [user_role] => lender
+    [user_email] => fatema.mounjir@gmail.com
+    [user_name] => len lender
+    [user_image] => uploads/users/106/profile_image/1737357672_girlIcon.png
+    [contribution_data] => Array
+        (
+            [amount] => 250
+            [loan_id] => 107
+            [percentage] => 12.5
+            [lender_id] => 106
+            [extra_amount] => 0
+            [extra_earning] => 0
+        )
+
+)
+
+[2025-02-18 21:02:58] Received input - Data: Array
+(
+    [raw] => {"amount":250,"loan_id":"107","email":"ema04hh@gmail.com","percentage":"12.50","extra_amount":0,"extra_earning":0}
+)
+
+[2025-02-18 21:02:58] Parsed input data - Data: Array
+(
+    [amount] => 250
+    [loan_id] => 107
+    [email] => ema04hh@gmail.com
+    [percentage] => 12.50
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 21:02:58] Loan check result - Data: Array
+(
+    [id] => 107
+    [user_id] => 105
+    [noOfInstallments] => 36
+    [interstRate] => 1
+    [grade] => A
+    [AnnualIncome] => 1111111
+    [loanAmount] => 2000
+    [loanPurpose] => credit_card
+    [employeementTenure] => 11
+    [Accepted_Date] => 
+    [status] => Accepted
+    [requested_at] => 2025-02-18 19:17:09
+    [InstallmentAmount] => 140.56
+    [TotalLoan] => 5060
+    [stripe_account_id] => 
+    [updated_at] => 2025-02-18 19:17:18
+    [total_funded] => 500
+)
+
+[2025-02-18 21:02:58] Creating Stripe order - Data: Array
+(
+    [amount] => 250
+    [loan_id] => 107
+    [percentage] => 12.5
+    [lender_id] => 106
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 21:02:58] About to create Stripe order
+[2025-02-18 21:02:58] Stripe response received - Data: Array
+(
+    [success] => 
+    [error] => No such destination: 'acct_1QthX6B2UpV2W2vM'
+)
+
+[2025-02-18 21:03:51] Script started
+[2025-02-18 21:03:51] Include path: .:/Applications/XAMPP/xamppfiles/lib/php
+[2025-02-18 21:03:51] Found file: ../Classes/Stripe.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Stripe.php
+[2025-02-18 21:03:51] Found file: ../Classes/Database.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Database.php
+[2025-02-18 21:03:51] Found file: ../Classes/UserAuth.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/UserAuth.php
+[2025-02-18 21:03:51] Required files loaded
+[2025-02-18 21:03:51] Session data - Data: Array
+(
+    [user_status] => active
+    [user_id] => 106
+    [user_role] => lender
+    [user_email] => fatema.mounjir@gmail.com
+    [user_name] => len lender
+    [user_image] => uploads/users/106/profile_image/1737357672_girlIcon.png
+    [contribution_data] => Array
+        (
+            [amount] => 250
+            [loan_id] => 107
+            [percentage] => 12.5
+            [lender_id] => 106
+            [extra_amount] => 0
+            [extra_earning] => 0
+        )
+
+)
+
+[2025-02-18 21:03:51] Received input - Data: Array
+(
+    [raw] => {"amount":200,"loan_id":"107","email":"ema04hh@gmail.com","percentage":"10.00","extra_amount":0,"extra_earning":0}
+)
+
+[2025-02-18 21:03:51] Parsed input data - Data: Array
+(
+    [amount] => 200
+    [loan_id] => 107
+    [email] => ema04hh@gmail.com
+    [percentage] => 10.00
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 21:03:51] Loan check result - Data: Array
+(
+    [id] => 107
+    [user_id] => 105
+    [noOfInstallments] => 36
+    [interstRate] => 1
+    [grade] => A
+    [AnnualIncome] => 1111111
+    [loanAmount] => 2000
+    [loanPurpose] => credit_card
+    [employeementTenure] => 11
+    [Accepted_Date] => 
+    [status] => Accepted
+    [requested_at] => 2025-02-18 19:17:09
+    [InstallmentAmount] => 140.56
+    [TotalLoan] => 5060
+    [stripe_account_id] => 
+    [updated_at] => 2025-02-18 19:17:18
+    [total_funded] => 500
+)
+
+[2025-02-18 21:03:51] Creating Stripe order - Data: Array
+(
+    [amount] => 200
+    [loan_id] => 107
+    [percentage] => 10
+    [lender_id] => 106
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 21:03:51] About to create Stripe order
+[2025-02-18 21:03:52] Stripe response received - Data: Array
+(
+    [success] => 
+    [error] => No such destination: 'acct_1QthX6B2UpV2W2vM'
+)
+
+[2025-02-18 21:04:10] Script started
+[2025-02-18 21:04:10] Include path: .:/Applications/XAMPP/xamppfiles/lib/php
+[2025-02-18 21:04:10] Found file: ../Classes/Stripe.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Stripe.php
+[2025-02-18 21:04:10] Found file: ../Classes/Database.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Database.php
+[2025-02-18 21:04:10] Found file: ../Classes/UserAuth.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/UserAuth.php
+[2025-02-18 21:04:10] Required files loaded
+[2025-02-18 21:04:10] Session data - Data: Array
+(
+    [user_status] => active
+    [user_id] => 106
+    [user_role] => lender
+    [user_email] => fatema.mounjir@gmail.com
+    [user_name] => len lender
+    [user_image] => uploads/users/106/profile_image/1737357672_girlIcon.png
+    [contribution_data] => Array
+        (
+            [amount] => 200
+            [loan_id] => 107
+            [percentage] => 10
+            [lender_id] => 106
+            [extra_amount] => 0
+            [extra_earning] => 0
+        )
+
+)
+
+[2025-02-18 21:04:10] Received input - Data: Array
+(
+    [raw] => {"amount":2000,"loan_id":"107","email":"ema04hh@gmail.com","percentage":"100.00","extra_amount":500,"extra_earning":25}
+)
+
+[2025-02-18 21:04:10] Parsed input data - Data: Array
+(
+    [amount] => 2000
+    [loan_id] => 107
+    [email] => ema04hh@gmail.com
+    [percentage] => 100.00
+    [extra_amount] => 500
+    [extra_earning] => 25
+)
+
+[2025-02-18 21:04:10] Loan check result - Data: Array
+(
+    [id] => 107
+    [user_id] => 105
+    [noOfInstallments] => 36
+    [interstRate] => 1
+    [grade] => A
+    [AnnualIncome] => 1111111
+    [loanAmount] => 2000
+    [loanPurpose] => credit_card
+    [employeementTenure] => 11
+    [Accepted_Date] => 
+    [status] => Accepted
+    [requested_at] => 2025-02-18 19:17:09
+    [InstallmentAmount] => 140.56
+    [TotalLoan] => 5060
+    [stripe_account_id] => 
+    [updated_at] => 2025-02-18 19:17:18
+    [total_funded] => 500
+)
+
+[2025-02-18 21:04:10] Creating Stripe order - Data: Array
+(
+    [amount] => 2000
+    [loan_id] => 107
+    [percentage] => 100
+    [lender_id] => 106
+    [extra_amount] => 500
+    [extra_earning] => 25
+)
+
+[2025-02-18 21:04:10] About to create Stripe order
+[2025-02-18 21:04:10] Stripe response received - Data: Array
+(
+    [success] => 
+    [error] => No such destination: 'acct_1QthX6B2UpV2W2vM'
+)
+
+[2025-02-18 21:14:58] Script started
+[2025-02-18 21:14:58] Include path: .:/Applications/XAMPP/xamppfiles/lib/php
+[2025-02-18 21:14:58] Found file: ../Classes/Stripe.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Stripe.php
+[2025-02-18 21:14:58] Found file: ../Classes/Database.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/Database.php
+[2025-02-18 21:14:58] Found file: ../Classes/UserAuth.php at /Applications/XAMPP/xamppfiles/htdocs/Classes/UserAuth.php
+[2025-02-18 21:14:58] Required files loaded
+[2025-02-18 21:14:58] Session data - Data: Array
+(
+    [user_status] => active
+    [user_id] => 106
+    [user_role] => lender
+    [user_email] => fatema.mounjir@gmail.com
+    [user_name] => len lender
+    [user_image] => uploads/users/106/profile_image/1737357672_girlIcon.png
+    [contribution_data] => Array
+        (
+            [amount] => 2000
+            [loan_id] => 107
+            [percentage] => 100
+            [lender_id] => 106
+            [extra_amount] => 500
+            [extra_earning] => 25
+        )
+
+)
+
+[2025-02-18 21:14:58] Received input - Data: Array
+(
+    [raw] => {"amount":300,"loan_id":"107","email":"ema04hh@gmail.com","percentage":"15.00","extra_amount":0,"extra_earning":0}
+)
+
+[2025-02-18 21:14:58] Parsed input data - Data: Array
+(
+    [amount] => 300
+    [loan_id] => 107
+    [email] => ema04hh@gmail.com
+    [percentage] => 15.00
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 21:14:58] Loan check result - Data: Array
+(
+    [id] => 107
+    [user_id] => 105
+    [noOfInstallments] => 36
+    [interstRate] => 1
+    [grade] => A
+    [AnnualIncome] => 1111111
+    [loanAmount] => 2000
+    [loanPurpose] => credit_card
+    [employeementTenure] => 11
+    [Accepted_Date] => 
+    [status] => Accepted
+    [requested_at] => 2025-02-18 19:17:09
+    [InstallmentAmount] => 140.56
+    [TotalLoan] => 5060
+    [stripe_account_id] => 
+    [updated_at] => 2025-02-18 19:17:18
+    [total_funded] => 500
+)
+
+[2025-02-18 21:14:58] Creating Stripe order - Data: Array
+(
+    [amount] => 300
+    [loan_id] => 107
+    [percentage] => 15
+    [lender_id] => 106
+    [extra_amount] => 0
+    [extra_earning] => 0
+)
+
+[2025-02-18 21:14:58] About to create Stripe order
+[2025-02-18 21:14:58] Stripe response received - Data: Array
+(
+    [success] => 
+    [error] => No such destination: 'acct_1QthX6B2UpV2W2vM'
+)
+
