@@ -141,6 +141,9 @@ class LoanPaymentHandler {
         $stmt->execute();
         $lenders = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
+echo json_encode($lenders);;
+exit();
+
         foreach ($lenders as $lender) {
             // Calculate lender's share
             $principalShare = $installment['principal'] * ($lender['LoanPercent'] / 100);

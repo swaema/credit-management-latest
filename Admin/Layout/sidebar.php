@@ -49,6 +49,13 @@
               <span>Contributed Loans</span>
             </a>
           </li>
+
+          <li class="nav-item mb-1">
+            <a href="Closedloan.php" class="nav-link text-white hover-item">
+              <i class="bi bi-file-spreadsheet-fill me-2"></i>
+              <span>Closed Loans</span>
+            </a>
+          </li>
           
           <!-- User Management Section -->
           <li class="sidebar-heading mt-3 mb-2 px-3">

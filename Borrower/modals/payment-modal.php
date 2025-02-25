@@ -26,7 +26,7 @@
                 $totalPaid = isset($installment['total_paid']) ? floatval($installment['total_paid']) : 0;
                 
                 // Calculate remaining balance with null check
-                $remainingBalance = Loan::getPendingAmount();
+                $remainingBalance = Loan::getPendingAmountbyloanid($loan['id']);
                 ?>
 
                 <!-- Progress Section -->
@@ -104,7 +104,7 @@
                                     <div class="detail-row">
                                         <span>Remaining Balance</span>
                                         <strong class="d-block mt-1 text-danger">
-                                            $<?php echo number_format((float)$remainingBalance, 2) ?>
+                                            $<?php echo number_format($remainingBalance, 2) ?>
                                         </strong>
                                     </div>
                                 </div>

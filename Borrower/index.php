@@ -7,6 +7,8 @@ require_once '../Classes/Database.php';
 if (!UserAuth::isBorrowerAuthenticated()) {
     header('Location:../login.php?e=You are not Logged in.');
 }
+
+$userid =  $_SESSION['user_id'];
 include_once('Layout/head.php');
 require_once '../Classes/Loan.php';
 
@@ -45,7 +47,7 @@ include_once('Layout/sidebar.php');
                 <div class="card-body">
                     <h5 class="card-title">Pending Amount</h5>
                     <p class="card-text display-6 text-center">
-                        <?php echo Loan::getPendingAmount(); ?>
+                        <?php echo Loan::getPendingAmount($userid); ?>
                     </p>
                 </div>
             </div>

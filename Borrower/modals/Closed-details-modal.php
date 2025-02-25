@@ -26,7 +26,7 @@
                 $totalPaid = isset($installment['total_paid']) ? floatval($installment['total_paid']) : 0;
                 
                 // Calculate remaining balance with null check
-                $remainingBalance = Loan::getPendingAmount();
+                $remainingBalance = Loan::getPendingAmountbyloanid($loan['id']);
                 ?>
 
                 <!-- Progress Section -->

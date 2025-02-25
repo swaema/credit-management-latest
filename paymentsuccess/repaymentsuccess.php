@@ -6,7 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 require '../Classes/Stripe.php';
 require '../Classes/Database.php';
-require '../Classes/Mail.php';
+require_once '../Classes/Loan.php';
 
 
 function logRepayment($message, $data = null) {
@@ -106,9 +106,10 @@ if (!$stmt->execute()) {
 
         $distributionAmount = $payAmount - $adminfee;
         while ($contributor = $contributors->fetch_assoc()) {
-            $lenderShare = ($distributionAmount * $contributor['LoanPercent']) / 100;
-            $principalShare = ($principal * $contributor['LoanPercent']) / 100;
-            $interestShare = ($interest * $contributor['LoanPercent']) / 100;
+          
+            $lenderShare = ($payAmount-$adminfee) * ($contributor['LoanPercent'] / 100);
+            $loaninfo = Loan::getLoanById($contributor['loanId']);
+            $interestShare = $lenderShare * ($loaninfo['interstRate']/100);
 
             // Update consolidated fund
             $fundQuery = "INSERT INTO consoledatedfund (user_id, Amount, Earning) 

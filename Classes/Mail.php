@@ -38,6 +38,7 @@ class Mail
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
+            $mail->isHTML(true);
             $mail->Username = 'sbw.hosenbocus@gmail.com'; // Your Gmail address
             $mail->Password = 'jdxetthyweurpkcg'; // Your App Password (use environment variables in production)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
@@ -134,6 +135,7 @@ class Mail
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
+            $mail->isHTML(true);
             $mail->Username = 'sbw.hosenbocus@gmail.com';
             $mail->Password = 'jdxetthyweurpkcg';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
@@ -202,6 +204,7 @@ class Mail
             $mail->Password = 'jdxetthyweurpkcg';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
+            $mail->isHTML(true);
             $mail->setFrom('dissertationsafefund@gmail.com', 'Admin');
             $mail->addAddress($email);
             $mail->Subject = 'Verification Code of SafeFund';
@@ -233,6 +236,7 @@ class Mail
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
+            $mail->isHTML(true);
             $mail->Username = 'sbw.hosenbocus@gmail.com';
             $mail->Password = 'jdxetthyweurpkcg';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
@@ -299,6 +303,7 @@ class Mail
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
+            $mail->isHTML(true);
             $mail->Username = 'sbw.hosenbocus@gmail.com';
             $mail->Password = 'jdxetthyweurpkcg';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
@@ -361,6 +366,7 @@ class Mail
             $mail->Password = 'jdxetthyweurpkcg';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
+            $mail->isHTML(true);
             $mail->setFrom('dissertationsafefund@gmail.com', 'SafeFund Admin');
             $mail->addAddress($email);
             $mail->Subject = 'Account Suspension Notice';

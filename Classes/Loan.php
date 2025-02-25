@@ -453,6 +453,40 @@ class Loan
             return [];
         }
     }
+
+    public static function allClosedLoans()
+    {
+        try {
+            $db = Database::getConnection();
+            if ($db === null) {
+                throw new Exception("Database connection failed");
+            }
+    
+            // Query to select closed loans for all users
+            $query = "
+                SELECT l.*, l.id as l_id, u.name, u.email, u.mobile, u.image, u.address 
+                FROM loans l
+                INNER JOIN users u ON l.user_id = u.id
+                WHERE l.status = 'Closed'";
+                
+            $stmt = $db->prepare($query);
+            $stmt->execute();
+            $result = $stmt->get_result();
+    
+            $loans = [];
+            while ($data = $result->fetch_assoc()) {
+                $loans[] = $data;
+            }
+    
+            $stmt->close();
+            return $loans;
+        } catch (Exception $e) {
+            error_log("Error fetching loans: " . $e->getMessage());
+            return [];
+        }
+    }
+    
+
     public static function changeStatus($id, $status)
     {
         $db = Database::getConnection();
@@ -856,7 +890,7 @@ class Loan
         }
     }
 
-    public static function getPendingAmount()
+    public static function getPendingAmount($id)
     {
         try {
             $db = Database::getConnection();
@@ -864,6 +898,24 @@ class Loan
             $query = "SELECT SUM(payable_amount) AS pending FROM loaninstallments WHERE status = 'Pending' and user_id = $id";
             $result = $db->query($query);
             return $result->fetch_assoc()['pending'] ?? 0;
+        } catch (Exception $e) {
+            error_log("Error fetching pending amount: " . $e->getMessage());
+            return 0;
+        }
+    }
+
+
+    public static function getPendingAmountbyloanid($id)
+    {
+        try {
+            $db = Database::getConnection();
+            $query = $db->prepare("SELECT SUM(payable_amount) AS pending FROM loaninstallments WHERE status = 'Pending' AND loan_id = ?");
+            $query->bind_param("i", $id);
+            $query->execute();
+            $result = $query->get_result();
+            $pendingAmount = $result->fetch_assoc()['pending'] ?? 0;
+            $query->close();
+            return $pendingAmount;
         } catch (Exception $e) {
             error_log("Error fetching pending amount: " . $e->getMessage());
             return 0;
