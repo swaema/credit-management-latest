@@ -34,18 +34,17 @@ return [
         'env'  => 'development'
     ],
     
-    // Database configuration could go here if needed
-    'database' => [
-        'host'     => 'localhost',
-        'username' => 'root',
-        'password' => '',
-        'dbname'   => 'credit_management'
-    ]
-
     // 'database' => [
     //     'host'     => 'localhost',
-    //     'username' => 'safefund_swaema',
-    //     'password' => 'Dissertation27$',
-    //     'dbname'   => 'safefund_credit_management'
+    //     'username' => 'root',
+    //     'password' => '',
+    //     'dbname'   => 'credit_management'
     // ]
+
+    'database' => [
+        'host'     => 'localhost',
+        'username' => 'safefund_swaema',
+        'password' => 'Dissertation27$',
+        'dbname'   => 'safefund_credit_management'
+    ]
 ];

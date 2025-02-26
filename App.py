@@ -92,4 +92,4 @@ if __name__ == '__main__':
     if rf_model is None or scaler is None or feature_columns is None:
         print("Model, scaler, or feature columns are not loaded. Exiting.")
     else:
-        app.run(host='0.0.0.0', port=5001)
+        app.run(host='127.0.0.1', port=5001)
