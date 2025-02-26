@@ -36,7 +36,7 @@ class Mail
             // Prepare the email message
             $mail = new PHPMailer(true);
             $mail->isSMTP();
-            $mail->Host = 'smtp.a2hosting.com';
+            $mail->Host = 'mail.safefunds.online';
             $mail->SMTPAuth = true;
             $mail->isHTML(true);
             $mail->Username = 'admin@safefunds.online'; // Your Gmail address
@@ -133,7 +133,7 @@ class Mail
 
             // SMTP configuration
             $mail->isSMTP();
-            $mail->Host = 'smtp.a2hosting.com';
+            $mail->Host = 'mail.safefunds.online';
             $mail->SMTPAuth = true;
             $mail->isHTML(true);
             $mail->Username = 'admin@safefunds.online'; // Your Gmail address
@@ -198,7 +198,7 @@ class Mail
 
             // SMTP configuration
             $mail->isSMTP();
-            $mail->Host = 'smtp.a2hosting.com';
+            $mail->Host = 'mail.safefunds.online';
             $mail->SMTPAuth = true;
             $mail->Username = 'admin@safefunds.online'; // Your Gmail address
             $mail->Password = 'Dissertation27$'; // Your App Password (use environment variables in production)
@@ -234,7 +234,7 @@ class Mail
             }
             $mail = new PHPMailer(true);
             $mail->isSMTP();
-            $mail->Host = 'smtp.a2hosting.com';
+            $mail->Host = 'mail.safefunds.online';
             $mail->SMTPAuth = true;
             $mail->isHTML(true);
             $mail->Username = 'admin@safefunds.online'; // Your Gmail address
@@ -301,7 +301,7 @@ class Mail
         try {
             $mail = new PHPMailer(true);
             $mail->isSMTP();
-            $mail->Host = 'smtp.a2hosting.com';
+            $mail->Host = 'mail.safefunds.online';
             $mail->SMTPAuth = true;
             $mail->isHTML(true);
             $mail->Username = 'admin@safefunds.online'; // Your Gmail address
@@ -360,7 +360,7 @@ class Mail
 
             $mail = new PHPMailer(true);
             $mail->isSMTP();
-            $mail->Host = 'smtp.a2hosting.com';
+            $mail->Host = 'mail.safefunds.online';
             $mail->SMTPAuth = true;
             $mail->Username = 'admin@safefunds.online'; // Your Gmail address
             $mail->Password = 'Dissertation27$'; // Your App Password (use environment variables in production)
