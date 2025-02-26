@@ -37,8 +37,8 @@ return [
     // Database configuration could go here if needed
     'database' => [
         'host'     => 'localhost',
-        'username' => 'root',
-        'password' => '',
-        'dbname'   => 'credit_management'
+        'username' => 'safefund_swaema',
+        'password' => 'Dissertation27$',
+        'dbname'   => 'safefund_credit_management'
     ]
 ];

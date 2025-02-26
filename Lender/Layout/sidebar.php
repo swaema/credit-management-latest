@@ -1,10 +1,16 @@
 <!-- Navbar with Hamburger Button -->
-<nav class="navbar navbar-dark bg-dark mb-5">
+<nav class="navbar navbar-light position-absolute container-fluid top-0 mb-5">
   <div class="container-fluid">
     <!-- Hamburger toggle button inside the navbar -->
-    <button class="navbar-toggler" id="sidebarToggle" type="button">
+    <button class="navbar-toggler text-white bg-secondary" id="sidebarToggle" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
+  
+  </div>
+</nav>
+<nav class="navbar navbar-light">
+  <div class="container-fluid">
+
   
   </div>
 </nav>
@@ -12,7 +18,7 @@
 <!-- Floating Sidebar -->
 <div id="sidebar" class="sidebar-wrapper active d-flex flex-column flex-shrink-0 pt-3 text-white bg-dark">
   <!-- Sidebar Header -->
-  <a href="/" class="sidebar-brand d-flex align-items-center mb-3 px-3 text-white text-decoration-none">
+  <a href="/" class="sidebar-brand d-flex align-items-center mb-3 px-3 text-white text-decoration-none mt-5">
     <i class="bi bi-person-workspace fs-4 me-2"></i>
     <span class="fs-4 fw-semibold">Lender Menu</span>
   </a>

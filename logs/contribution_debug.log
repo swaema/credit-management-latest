@@ -1199,3 +1199,35 @@
     "session_id": "cs_test_a1KmMlvGHtUWp1DlAFUfwXeG1b33eXzTuFhcUhYapIq1SWNyrJNS3JtcGJ",
     "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1KmMlvGHtUWp1DlAFUfwXeG1b33eXzTuFhcUhYapIq1SWNyrJNS3JtcGJ#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
 }
+[2025-02-26 20:45:12] Script started
+[2025-02-26 20:45:12] Received input - Data: {
+    "raw": "{\"amount\":10000,\"loan_id\":\"1\",\"email\":\"swaema04@gmail.com\",\"percentage\":25,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-26 20:45:12] Creating Stripe checkout session - Data: {
+    "amount": 10000,
+    "loan_id": 1,
+    "percentage": 25,
+    "lender_id": 114,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-26 20:45:14] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1ePBAetCgmx6uGGJyF7XJMeo1jmOZEgLcYOfFktfrZT3Wws4PPsQbNVRl",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1ePBAetCgmx6uGGJyF7XJMeo1jmOZEgLcYOfFktfrZT3Wws4PPsQbNVRl#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}
+[2025-02-26 20:46:45] Script started
+[2025-02-26 20:46:45] Received input - Data: {
+    "raw": "{\"amount\":30000,\"loan_id\":\"1\",\"email\":\"swaema04@gmail.com\",\"percentage\":75,\"extra_amount\":0,\"extra_earning\":0}"
+}
+[2025-02-26 20:46:45] Creating Stripe checkout session - Data: {
+    "amount": 30000,
+    "loan_id": 1,
+    "percentage": 75,
+    "lender_id": 113,
+    "borrower_email": "swaema04@gmail.com"
+}
+[2025-02-26 20:46:46] Stripe response received - Data: {
+    "success": true,
+    "session_id": "cs_test_a1vVx7VG8tY6ZH5TBlQlftRKmSeifFUtdDq2zYFaYrOAn9zIi5s1HiVmNK",
+    "url": "https:\/\/checkout.stripe.com\/c\/pay\/cs_test_a1vVx7VG8tY6ZH5TBlQlftRKmSeifFUtdDq2zYFaYrOAn9zIi5s1HiVmNK#fidpamZkaWAnPydgaycpJ2R1bE5gfCc%2FJ3VuWnFgdnFaMDRUbElJd0c1V1BfVDxVS3BTNlZOTEdfQGh3NUI8PXxzMmlPSV1nV1xhSTxhSkh9SWNLbjFibHdEYzFwV2xRUG9GNDxzM213Rn91SUpybkdyVWBRUkhpPU01NUNVbTF0dVJfJyknY3dqaFZgd3Ngdyc%2FcXdwYCknaWR8anBxUXx1YCc%2FJ3Zsa2JpYFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
+}

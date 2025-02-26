@@ -360,6 +360,7 @@ $db->query("CREATE TABLE IF NOT EXISTS loan_transfers (
 $errors = [];
 $id = $_SESSION['user_id'];
 $loans = Loan::allLoans("Pending");
+$loans = array_merge($loans,Loan::allLoans("updated"));
 
 include_once('Layout/head.php');
 include_once('Layout/sidebar.php');
@@ -579,8 +580,11 @@ include_once('Layout/sidebar.php');
                             </td>
                             <td><?php echo htmlspecialchars($loan['loanPurpose']); ?></td>
                             <td>
-                                <span class="status-badge bg-warning">Pending</span>
+                                <span class="status-badge bg-warning"><?php echo htmlspecialchars($loan['status']) ?></span>
                             </td>
+                            <?php 
+                            if ($loan['status'] == 'Pending'){
+                            ?>
                             <td>
                                 <div class="dropdown">
                                     <button class="btn btn-primary btn-sm action-btn dropdown-toggle"
@@ -733,6 +737,9 @@ include_once('Layout/sidebar.php');
                                     </div>
                                 </div>
                             </td>
+                            <?php }else{ ?>
+<td></td>
+                                <?php } ?>
                         </tr>
                     <?php endforeach; ?>
                 <?php endif; ?>

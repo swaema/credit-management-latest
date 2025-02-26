@@ -145,7 +145,7 @@ include_once('Layout/sidebar.php');
     }
 </style>
 
-<div class="col-md-10 container">
+<div class="col-md-12 container mt-5">
     <?php if ($error): ?>
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <?php echo htmlspecialchars($error); ?>

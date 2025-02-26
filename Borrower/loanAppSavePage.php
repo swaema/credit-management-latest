@@ -245,6 +245,7 @@ include_once('Layout/sidebar.php');
                         <div class="row d-flex justify-content-center">
                             <div class="col-8 mt-3">
                                 <div class="row">
+                                <label for="" class="form-label"> Loan Amount</label>
                                     <input type="number" id="amount" name="amount" class="form-control" value="50000"
                                         min="1000" max="100000" step="1000">
                                     <input type="range" id="amountRange" class="form-range" value="50000" min="1000"
@@ -253,7 +254,7 @@ include_once('Layout/sidebar.php');
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <label for="" class="form-label"> Term(No of Installment)</label>
+                                    <label for="" class="form-label"> Terms(in terms of months)</label>
                                     <input type="number" min="0" id="termInput" max="60" name="installments" value="36"
                                         class="form-control" id="">
                                 </div>

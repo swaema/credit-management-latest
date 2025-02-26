@@ -133,7 +133,7 @@ include_once('Layout/sidebar.php');
 }
 </style>
 
-<div class="container pb-5 loan-dashboard">
+<div class="container mt-5 pb-5 loan-dashboard">
     <div class="container-fluid py-4">
         <?php if (isset($error)): ?>
             <div class="alert alert-info alert-custom alert-dismissible fade show" role="alert">
