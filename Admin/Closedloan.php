@@ -31,7 +31,7 @@ include_once('Layout/sidebar.php');
     }
     
     .dashboard-header {
-        background: linear-gradient(135deg, #142127 0%, #2a454f 100%);
+        background: linear-gradient(135deg,rgb(21, 194, 50) 0%, #2a454f 100%);
         color: white;
         padding: 1.5rem;
         border-radius: 10px;
@@ -110,8 +110,8 @@ include_once('Layout/sidebar.php');
     <?php endif; ?>
 
     <div class="dashboard-header">
-        <h2 class="mb-0">Active Loans Management</h2>
-        <p class="text-light mb-0 mt-2">Monitor and manage all active loan applications</p>
+        <h2 class="mb-0">Closed Loans</h2>
+        <p class="text-light mb-0 mt-2">Viewing Loan History</p>
     </div>
 
     <div class="loan-card p-4">
@@ -361,7 +361,7 @@ include_once('Layout/sidebar.php');
                  '<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
             language: {
                 search: "_INPUT_",
-                searchPlaceholder: "Search loans...",
+                searchPlaceholder: "Search past loans...",
                 lengthMenu: "Show _MENU_ entries",
                 info: "Showing _START_ to _END_ of _TOTAL_ active loans",
                 paginate: {

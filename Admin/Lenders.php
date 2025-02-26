@@ -262,7 +262,7 @@ if ($result) {
             <thead>
                 <tr>
                     <th>Lender</th>
-                    <th>Contact Details</th>
+                    <th>Details</th>
                     <th>Status</th>
                     <th>Documents</th>
                     <th>Actions</th>
@@ -288,6 +288,8 @@ if ($result) {
                                 <div><i class="fas fa-envelope me-2"></i><?php echo htmlspecialchars($user['email']); ?></div>
                                 <div><i class="fas fa-phone me-2"></i><?php echo htmlspecialchars($user['mobile']); ?></div>
                                 <div><i class="fas fa-map-marker-alt me-2"></i><?php echo htmlspecialchars($user['address']); ?></div>
+                                <div><i class="fas fa-calendar-alt me-2"></i>Joined Date: <?php echo date('M d, Y', strtotime($user['created_at'])); ?></div>
+                                
                             </td>
                             <td>
                                 <span class="status-badge status-<?php echo strtolower(trim($user['status'])); ?>">
@@ -313,11 +315,11 @@ if ($result) {
                                             data-bs-target="#detailsModal<?php echo $user['id']; ?>">
                                         <i class="fas fa-eye me-2"></i>View
                                     </button>
-                                    <button class="action-btn btn btn-outline-warning ms-2" 
+                                   <!-- <button class="action-btn btn btn-outline-warning ms-2" 
                                             data-bs-toggle="modal"
                                             data-bs-target="#editModal<?php echo $user['id']; ?>">
                                         <i class="fas fa-edit me-2"></i>Edit
-                                    </button>
+                                    </button> -->
                                 </div>
                                 <!-- Status Change Buttons (No Dropdown) -->
                                 <div style="margin-top: 0.5rem;">

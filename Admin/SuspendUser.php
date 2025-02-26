@@ -271,7 +271,7 @@ include_once('Layout/sidebar.php');
                                     <?php echo htmlspecialchars($user['role']); ?>
                                 </span>
                         </td>
-                        <td><?php echo htmlspecialchars($user['email']); ?></td>
+                        <td><?php echo htmlspecialchars($user['mobile']); ?></td>
                         <td><?php echo htmlspecialchars($user['address']); ?></td>
                         <td>
                                 <span class="status-badge status-inactive">

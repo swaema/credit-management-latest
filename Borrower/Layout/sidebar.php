@@ -46,7 +46,7 @@
           <li class="nav-item mb-1">
             <a href="ActiveLoan.php" class="nav-link text-white hover-item">
               <i class="bi bi-check-circle me-2"></i>
-              <span>Loans Repayments</span>
+              <span> Active Loans</span>
             </a>
           </li>
 

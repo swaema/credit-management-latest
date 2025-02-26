@@ -31,7 +31,7 @@ include_once('Layout/sidebar.php');
     }
     
     .dashboard-header {
-        background: linear-gradient(135deg, #142127 0%, #2a454f 100%);
+        background: linear-gradient(135deg,rgb(75, 150, 185) 0%, #2a454f 100%);
         color: white;
         padding: 1.5rem;
         border-radius: 10px;

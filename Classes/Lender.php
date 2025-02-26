@@ -27,4 +27,8 @@
                 $loan->allocateFunds($amount, $this->id);
             }
         }
+
+        
+        
+
     }

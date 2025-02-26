@@ -261,7 +261,7 @@ include_once('Layout/sidebar.php');
                     <th>Mobile No.</th>
                     <th>Address</th>
                     <th>Status</th>
-                    <th>Image</th>
+                    <th>Picture</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -276,7 +276,7 @@ include_once('Layout/sidebar.php');
                                     <?php echo htmlspecialchars($user['role']); ?>
                                 </span>
                             </td>
-                            <td><?php echo htmlspecialchars($user['email']); ?></td>
+                            <td><?php echo htmlspecialchars($user['mobile']); ?></td>
                             <td><?php echo htmlspecialchars($user['address']); ?></td>
                             <td>
                                 <span class="status-badge status-blocked">
@@ -295,11 +295,11 @@ include_once('Layout/sidebar.php');
                                         <i class="fas fa-ellipsis-v"></i> Actions
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li>
+                                        <!--<li>
                                             <button type="button" class="action-btn btn-details" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $user['id'] ?>">
                                                 <i class="fas fa-info-circle"></i> View Details
                                             </button>
-                                        </li>
+                                        </li> -->
                                         <li>
                                             <form method="post" action="">
                                                 <input type="hidden" name="id" value="<?php echo htmlspecialchars($user['id']); ?>">
@@ -308,11 +308,11 @@ include_once('Layout/sidebar.php');
                                                 </button>
                                             </form>
                                         </li>
-                                        <li>
+                                       <!-- <li>
                                             <button type="button" class="action-btn btn-edit" id="<?php echo htmlspecialchars($user['id']); ?>">
                                                 <i class="fas fa-edit"></i> Edit
                                             </button>
-                                        </li>
+                                        </li> 
                                         <li>
                                             <form method="post" action="" onsubmit="return myConfirm();">
                                                 <input type="hidden" name="UserToDelete" value="<?php echo htmlspecialchars($user['id']); ?>">
@@ -321,7 +321,7 @@ include_once('Layout/sidebar.php');
                                                 </button>
                                             </form>
                                         </li>
-                                    </ul>
+                                    </ul>  -->
                                 </div>
 
                                 <!-- User Details Modal -->

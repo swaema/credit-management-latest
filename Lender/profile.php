@@ -119,7 +119,7 @@ include_once('Layout/head.php');
 include_once('Layout/sidebar.php');
 ?>
 
-<div class="col-md-10 pb-5" style="background-color: #ECF0F4;">
+<div class="container pb-5" style="background-color: #ECF0F4;">
     <div class="row text-center">
         <h5>
             <?php if (isset($error))

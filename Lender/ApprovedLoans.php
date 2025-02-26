@@ -154,8 +154,8 @@ include_once('Layout/sidebar.php');
     <?php endif; ?>
 
     <div class="dashboard-header">
-        <h2>Active Loans</h2>
-        <p>Review your current active loans and view details or payment history</p>
+        <h2>Current Active Loans</h2>
+        <p>Review your current invested loans and view details or payment history</p>
     </div>
 
     <div class="loan-card">

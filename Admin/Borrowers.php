@@ -175,11 +175,11 @@ $users = User::allByRole("borrower");
                 <h2 class="mb-0">Borrowers Management</h2>
                 <p class="text-light mb-0 mt-2">Manage and monitor all borrower accounts</p>
             </div>
-            <div>
+           <!-- <div>
                 <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#borrowerModal">
                     <i class="fas fa-plus me-2"></i>Add New Borrower
                 </button>
-            </div>
+            </div> -->
         </div>
         
         <!-- Quick Stats -->
@@ -232,6 +232,7 @@ $users = User::allByRole("borrower");
                                 <div><i class="fas fa-envelope me-2"></i><?php echo htmlspecialchars($user['email']); ?></div>
                                 <div><i class="fas fa-phone me-2"></i><?php echo htmlspecialchars($user['mobile']); ?></div>
                                 <div><i class="fas fa-map-marker-alt me-2"></i><?php echo htmlspecialchars($user['address']); ?></div>
+                                <div><i class="fas fa-calendar-alt me-2"></i>Joined Date: <?php echo date('M d, Y', strtotime($user['created_at'])); ?></div>
                             </td>
                             <td>
                                 <span class="status-badge <?php echo strtolower($user['status']) === 'active' ? 'bg-success' : 'bg-warning'; ?>">
@@ -257,12 +258,12 @@ $users = User::allByRole("borrower");
                                             data-bs-target="#detailsModal<?php echo $user['id']; ?>">
                                         <i class="fas fa-eye me-2"></i>View
                                     </button>
-                                    <button class="action-btn btn btn-outline-warning ms-2 edit-user" 
+                                    <!--<button class="action-btn btn btn-outline-warning ms-2 edit-user" 
                                             data-user-id="<?php echo $user['id']; ?>"
                                             data-bs-toggle="modal"
                                             data-bs-target="#editModal<?php echo $user['id']; ?>">
                                         <i class="fas fa-edit me-2"></i>Edit
-                                    </button>
+                                    </button> -->
                                 </div>
                                 <!-- Inline Status Change Buttons -->
                                 <div style="margin-top: 0.5rem;">

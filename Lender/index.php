@@ -2,6 +2,7 @@
 include_once('../Classes/UserAuth.php');
 require_once '../Classes/Database.php';
 require_once '../Classes/Loan.php';
+
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -20,13 +21,14 @@ $amount = $conn->query("SELECT `Amount` FROM `consoledatedfund` WHERE `user_id` 
 $totalLoans = $conn->query("SELECT COUNT(DISTINCT id) AS count FROM loans where status = 'Pending'")->fetch_assoc()['count']??0;
 $totalBorrowers = $conn->query("SELECT COUNT(DISTINCT id) AS count FROM users where `role` ='borrower' AND `user_verfied`='verified' and status ='Active'")->fetch_assoc()['count']??0;
 $profit = $conn->query("SELECT `Earning` FROM `consoledatedfund` WHERE `user_id` = $id")->fetch_assoc()['Earning']??0;
-$conn->close();
+$consolidatedAmount = Loan::getConsolidatedAmount($id);
+$contributeTotal = Loan::getContributeTotal($id);
 
 include_once('Layout/head.php');
 include_once('Layout/sidebar.php'); 
 ?>
 
-<div class="col-md-10 pb-5" style="background-color: #f8f9fa;">
+<div class="container bg-light pb-5" style="background-color: #f8f9fa;">
     <div class="container my-5">
         <div class="dashboard-header mb-5">
             <h1 class="text-center position-relative" style="color: #2c3e50; font-weight: 700;">
@@ -35,7 +37,7 @@ include_once('Layout/sidebar.php');
             </h1>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 mb-8">
             <!-- Available Amount Card -->
             <div class="col-md-3">
                 <div class="card h-100 border-0 shadow-sm hover-card" style="border-radius: 15px; transition: transform 0.3s ease;">
@@ -88,6 +90,10 @@ include_once('Layout/sidebar.php');
                 </div>
             </div>
         </div>
+
+    </div>
+    <div class="container row mt-6 bg-light shadow border rounded p-4" style="width: 80%; margin: auto;">
+        <canvas id="profitChart"></canvas>
     </div>
 </div>
 
@@ -128,5 +134,38 @@ include_once('Layout/sidebar.php');
     }
 }
 </style>
+
+<!-- Include Chart.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const ctx = document.getElementById('profitChart').getContext('2d');
+const profitChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Consolidated Amount', 'Contribute Total'],
+        datasets: [{
+            label: 'Amount (Rs)',
+            data: [<?php echo $consolidatedAmount; ?>, <?php echo $contributeTotal; ?>],
+            backgroundColor: [
+                'rgba(52, 152, 219, 0.2)',
+                'rgba(46, 204, 113, 0.2)'
+            ],
+            borderColor: [
+                'rgba(52, 152, 219, 1)',
+                'rgba(46, 204, 113, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
 
 <?php include_once('Layout/footer.php'); ?>

@@ -1001,6 +1001,39 @@ class Loan
         return $result->fetch_all(MYSQLI_ASSOC);
     }
     
-
+    public static function getContributeTotal($userid) {
+        $db = Database::getConnection();
+        $query = "SELECT SUM(LoanAmount) AS TotalContributedAmount FROM lendercontribution WHERE lenderId = ?";
+        
+        $stmt = $db->prepare($query);
+        $stmt->bind_param("i", $userid);
+        $stmt->execute();
+        
+        $result = $stmt->get_result();
+        
+        if ($row = $result->fetch_assoc()) {
+            return $row['TotalContributedAmount'] ?? 0; 
+        } else {
+            return 0;
+        }
+        
+    }
+    
+    public static function getConsolidatedAmount($userid) {
+        $db = Database::getConnection();
+        $query = "SELECT Amount,Earning FROM consoledatedfund WHERE user_id = ?";
+        
+        $stmt = $db->prepare($query);
+        $stmt->bind_param("i", $userid);
+        $stmt->execute();
+        
+        $result = $stmt->get_result();
+    
+        if ($row = $result->fetch_assoc()) {
+            return $row['Amount'] + $row['Earning'] ?? 0; 
+        } else {
+            return 0;
+        }
+    }
     
 }

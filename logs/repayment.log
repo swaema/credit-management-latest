@@ -384,3 +384,14 @@
     "loan_id": "2",
     "amount": 2125
 }
+[2025-02-26 16:00:39] Processing repayment - Data: {
+    "loan_id": "2",
+    "amount": 5141.5,
+    "principal": "5000",
+    "interest": 2050,
+    "admin_fee": "102.83"
+}
+[2025-02-26 16:00:52] Payment processed successfully - Data: {
+    "loan_id": "2",
+    "amount": 5141.5
+}

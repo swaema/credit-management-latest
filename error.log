@@ -16,3 +16,41 @@ Stack trace:
 #3 C:\xampp\htdocs\login.php(31): UserAuth::login('swaema04@gmail....', 'Swaema04@')
 #4 {main}
   thrown in C:\xampp\htdocs\Classes\Database.php on line 7
+[26-Feb-2025 13:24:32 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Classes\Database.php:7
+Stack trace:
+#0 C:\xampp\htdocs\Classes\Database.php(7): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'credit_manageme...')
+#1 C:\xampp\htdocs\Classes\User.php(361): Database::getConnection()
+#2 C:\xampp\htdocs\Classes\UserAuth.php(18): User::findByEmail('swaema04@gmail....')
+#3 C:\xampp\htdocs\login.php(31): UserAuth::login('swaema04@gmail....', 'Swaema04@')
+#4 {main}
+  thrown in C:\xampp\htdocs\Classes\Database.php on line 7
+[26-Feb-2025 17:21:24 Europe/Berlin] PHP Warning:  require_once(../Classes/User.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Classes\Lender.php on line 2
+[26-Feb-2025 17:21:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Classes/User.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Classes\Lender.php:2
+Stack trace:
+#0 C:\xampp\htdocs\login.php(14): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Classes\Lender.php on line 2
+[26-Feb-2025 17:22:09 Europe/Berlin] PHP Warning:  require_once(./User.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Classes\Lender.php on line 2
+[26-Feb-2025 17:22:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required './User.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Classes\Lender.php:2
+Stack trace:
+#0 C:\xampp\htdocs\login.php(14): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Classes\Lender.php on line 2
+[26-Feb-2025 17:22:41 Europe/Berlin] PHP Warning:  require_once(/Classes/User.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Classes\Lender.php on line 2
+[26-Feb-2025 17:22:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/Classes/User.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Classes\Lender.php:2
+Stack trace:
+#0 C:\xampp\htdocs\login.php(14): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Classes\Lender.php on line 2
+[26-Feb-2025 17:23:01 Europe/Berlin] PHP Warning:  require_once(\Classes\User.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Classes\Lender.php on line 2
+[26-Feb-2025 17:23:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '\Classes\User.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Classes\Lender.php:2
+Stack trace:
+#0 C:\xampp\htdocs\login.php(14): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Classes\Lender.php on line 2
+[26-Feb-2025 17:23:09 Europe/Berlin] PHP Warning:  require_once(\User.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Classes\Lender.php on line 2
+[26-Feb-2025 17:23:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '\User.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Classes\Lender.php:2
+Stack trace:
+#0 C:\xampp\htdocs\login.php(14): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\Classes\Lender.php on line 2

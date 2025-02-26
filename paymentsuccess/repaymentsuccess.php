@@ -110,6 +110,7 @@ if (!$stmt->execute()) {
             $lenderShare = ($payAmount-$adminfee) * ($contributor['LoanPercent'] / 100);
             $loaninfo = Loan::getLoanById($contributor['loanId']);
             $interestShare = $lenderShare * ($loaninfo['interstRate']/100);
+            
 
             // Update consolidated fund
             $fundQuery = "INSERT INTO consoledatedfund (user_id, Amount, Earning) 
