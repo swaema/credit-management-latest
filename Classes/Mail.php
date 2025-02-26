@@ -45,7 +45,7 @@ class Mail
             $mail->Port = 465;
 
             // Email details
-            $mail->setFrom('dissertationsafefund@gmail.com', 'Admin');
+            $mail->setFrom('admin@safefunds.online', 'Admin');
             $mail->addAddress('umar150704@gmail.com');
             $mail->Subject = 'Mail for Loan Acceptance';
             $messageBody = 'Dear ' . $mailUser['name'] . ', your loan request for amount ' . $mailUser['loanAmount'] .
@@ -140,7 +140,7 @@ class Mail
             $mail->Password = 'Dissertation27$'; // Your App Password (use environment variables in production)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
-            $mail->setFrom('dissertationsafefund@gmail.com', 'Admin');
+            $mail->setFrom('admin@safefunds.online', 'Admin');
             $mail->addAddress($mailUser['email']);
             $mail->Subject = 'Mail for Loan Acceptance';
             $mail->Body = 'Dear ' . $mailUser['name'] . ', your installment for paydate ' . $mailUser['pay_date'] .
@@ -205,7 +205,7 @@ class Mail
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
             $mail->isHTML(true);
-            $mail->setFrom('dissertationsafefund@gmail.com', 'Admin');
+            $mail->setFrom('admin@safefunds.online', 'Admin');
             $mail->addAddress($email);
             $mail->Subject = 'Verification Code of SafeFund';
             $mail->Body = "Your OTP code is: " . $otp;
@@ -241,7 +241,7 @@ class Mail
             $mail->Password = 'Dissertation27$'; // Your App Password (use environment variables in production)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
-            $mail->setFrom('dissertationsafefund@gmail.com', 'Admin');
+            $mail->setFrom('admin@safefunds.online', 'Admin');
             $mail->addAddress($email);
             $mail->Subject = 'Account Verified';
             $mail->Body = "Dear user, your Email account is verified and your application is now under review. We will process it shortly. Thank you for your patience!";
@@ -308,7 +308,7 @@ class Mail
             $mail->Password = 'Dissertation27$'; // Your App Password (use environment variables in production)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
-            $mail->setFrom('dissertationsafefund@gmail.com', 'Admin');
+            $mail->setFrom('admin@safefunds.online', 'Admin');
             $mail->addAddress($email);
             $mail->Subject = $subject;
             $mail->Body = $body;
@@ -367,7 +367,7 @@ class Mail
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
             $mail->isHTML(true);
-            $mail->setFrom('dissertationsafefund@gmail.com', 'SafeFund Admin');
+            $mail->setFrom('admin@safefunds.online', 'SafeFund Admin');
             $mail->addAddress($email);
             $mail->Subject = 'Account Suspension Notice';
             $mail->Body = "Dear User,\n\n"
