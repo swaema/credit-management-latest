@@ -39,8 +39,8 @@ class Mail
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->isHTML(true);
-            $mail->Username = 'sbw.hosenbocus@gmail.com'; // Your Gmail address
-            $mail->Password = 'jdxetthyweurpkcg'; // Your App Password (use environment variables in production)
+            $mail->Username = 'admin@safefunds.online'; // Your Gmail address
+            $mail->Password = 'Dissertation27$'; // Your App Password (use environment variables in production)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
@@ -136,8 +136,8 @@ class Mail
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->isHTML(true);
-            $mail->Username = 'sbw.hosenbocus@gmail.com';
-            $mail->Password = 'jdxetthyweurpkcg';
+            $mail->Username = 'admin@safefunds.online'; // Your Gmail address
+            $mail->Password = 'Dissertation27$'; // Your App Password (use environment variables in production)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
             $mail->setFrom('dissertationsafefund@gmail.com', 'Admin');
@@ -200,8 +200,8 @@ class Mail
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'sbw.hosenbocus@gmail.com';
-            $mail->Password = 'jdxetthyweurpkcg';
+            $mail->Username = 'admin@safefunds.online'; // Your Gmail address
+            $mail->Password = 'Dissertation27$'; // Your App Password (use environment variables in production)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
             $mail->isHTML(true);
@@ -237,8 +237,8 @@ class Mail
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->isHTML(true);
-            $mail->Username = 'sbw.hosenbocus@gmail.com';
-            $mail->Password = 'jdxetthyweurpkcg';
+            $mail->Username = 'admin@safefunds.online'; // Your Gmail address
+            $mail->Password = 'Dissertation27$'; // Your App Password (use environment variables in production)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
             $mail->setFrom('dissertationsafefund@gmail.com', 'Admin');
@@ -304,8 +304,8 @@ class Mail
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->isHTML(true);
-            $mail->Username = 'sbw.hosenbocus@gmail.com';
-            $mail->Password = 'jdxetthyweurpkcg';
+            $mail->Username = 'admin@safefunds.online'; // Your Gmail address
+            $mail->Password = 'Dissertation27$'; // Your App Password (use environment variables in production)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
             $mail->setFrom('dissertationsafefund@gmail.com', 'Admin');
@@ -362,8 +362,8 @@ class Mail
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'sbw.hosenbocus@gmail.com';
-            $mail->Password = 'jdxetthyweurpkcg';
+            $mail->Username = 'admin@safefunds.online'; // Your Gmail address
+            $mail->Password = 'Dissertation27$'; // Your App Password (use environment variables in production)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
             $mail->isHTML(true);
