@@ -1,4 +1,6 @@
 <?php
+require_once dirname(__DIR__) . '/vendor/autoload.php';
+use Kint\Kint;
 class UserAuth
 {
     public static function register($data)

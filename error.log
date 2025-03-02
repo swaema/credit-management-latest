@@ -54,3 +54,36 @@ Stack trace:
 #0 C:\xampp\htdocs\login.php(14): require_once()
 #1 {main}
   thrown in C:\xampp\htdocs\Classes\Lender.php on line 2
+[02-Mar-2025 18:30:04 UTC] PHP Fatal error:  Uncaught Error: Class "Kint\Kint" not found in /var/www/credit-management-latest/Classes/UserAuth.php:21
+Stack trace:
+#0 /var/www/credit-management-latest/login.php(32): UserAuth::login()
+#1 {main}
+  thrown in /var/www/credit-management-latest/Classes/UserAuth.php on line 21
+[02-Mar-2025 18:32:23 UTC] PHP Fatal error:  Uncaught Error: Class "Kint\Kint" not found in /var/www/credit-management-latest/Classes/UserAuth.php:21
+Stack trace:
+#0 /var/www/credit-management-latest/login.php(32): UserAuth::login()
+#1 {main}
+  thrown in /var/www/credit-management-latest/Classes/UserAuth.php on line 21
+[02-Mar-2025 18:33:05 UTC] PHP Warning:  include(../vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/credit-management-latest/Classes/UserAuth.php on line 2
+[02-Mar-2025 18:33:05 UTC] PHP Warning:  include(): Failed opening '../vendor/autoload.php' for inclusion (include_path='.:/usr/share/php') in /var/www/credit-management-latest/Classes/UserAuth.php on line 2
+[02-Mar-2025 18:33:05 UTC] PHP Fatal error:  Uncaught Error: Class "Kint\Kint" not found in /var/www/credit-management-latest/Classes/UserAuth.php:21
+Stack trace:
+#0 /var/www/credit-management-latest/login.php(32): UserAuth::login()
+#1 {main}
+  thrown in /var/www/credit-management-latest/Classes/UserAuth.php on line 21
+[02-Mar-2025 19:22:43 UTC] PHP Warning:  Undefined variable $email in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:22:43 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:22:47 UTC] PHP Warning:  Undefined variable $email in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:22:47 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:22:49 UTC] PHP Warning:  Undefined variable $email in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:22:49 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:22:49 UTC] PHP Warning:  Undefined variable $email in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:22:49 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:22:50 UTC] PHP Warning:  Undefined variable $email in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:22:50 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:22:50 UTC] PHP Warning:  Undefined variable $email in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:22:50 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/credit-management-latest/login.php on line 66
+[02-Mar-2025 19:27:44 UTC] PHP Warning:  Undefined array key "user_verified" in /var/www/credit-management-latest/login.php on line 62
+[02-Mar-2025 19:27:54 UTC] PHP Warning:  Undefined array key "user_verified" in /var/www/credit-management-latest/login.php on line 62
+[02-Mar-2025 19:29:01 UTC] PHP Warning:  Undefined array key "user_verified" in /var/www/credit-management-latest/login.php on line 62
+[02-Mar-2025 19:29:01 UTC] PHP Warning:  Undefined array key "user_verified" in /var/www/credit-management-latest/login.php on line 63

@@ -13,7 +13,7 @@ class OTPHandler
             $_SESSION['otp_cache'][$email] = [
                 'otp' => $otp,
                 'created_at' => time(),
-                'expires_at' => time() + 120 // 2 minutes
+                'expires_at' => time() + 300 // 5 minutes
             ];
 
             return true;

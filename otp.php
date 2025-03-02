@@ -14,7 +14,10 @@ $message = $_GET['s'] ?? '';
 $expiry = OTPHandler::getOTPExpiryTime($email);
 
 if ($expiry === null) {
-    echo "OTP not found for this email.";
+    $otp = OTPHandler::generateOTP();
+    if (OTPHandler::storeOTPInSession($email, $otp)) {
+        sendOTPEmail($email, $otp);
+    }
 } else {
     $remaining = $expiry - time();
     
@@ -44,7 +47,6 @@ if (isset($_POST['verifyOTP'])) {
     }
     
     $stored_otp = OTPHandler::getStoredOTP($email);
-    
     if ($submitted_otp === $stored_otp) {
         OTPHandler::removeOTPFromSession($email);
         User::changeStatus($email);

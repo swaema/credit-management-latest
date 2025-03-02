@@ -12,6 +12,7 @@ class User
     public $image;
     public $address;
     public $status;
+    public $user_verified;
 
 
     public function __construct($id = null, $name = null, $email = null, $password = null, $role = null, $mobile = null, $address = null, $image = null, $status = null)
@@ -25,6 +26,7 @@ class User
         $this->address = $address;
         $this->image = $image;
         $this->status = $status;
+        $this->user_verified = false;
     }
 
     public function save()
@@ -362,17 +364,39 @@ class User
             if ($db === null) {
                 throw new Exception("Database connection failed");
             }
-            $veri = "verified";
             // Include 'status' field in SELECT query
-            $query = "SELECT * FROM users WHERE email = ? and user_verfied =?";
+            $query = "SELECT * FROM users WHERE email = ?";
             $stmt = $db->prepare($query);
-            $stmt->bind_param("ss", $email, $veri);
+            $stmt->bind_param("s", $email);
             $stmt->execute();
             $result = $stmt->get_result();
             $data = $result->fetch_assoc();
             $stmt->close();
 
             return $data ? new self($data['id'], $data['name'], $data['email'], $data['password'], $data['role'], $data['mobile'], $data['address'], $data['image'], $data['status']) : null;
+        } catch (Exception $e) {
+            error_log("Error finding user by email: " . $e->getMessage());
+            echo "Error: " . $e->getMessage();
+        }
+    }
+
+    public static function findByEmail2($email)
+    {
+        try {
+            $db = Database::getConnection();
+            if ($db === null) {
+                throw new Exception("Database connection failed");
+            }
+            // Include 'status' field in SELECT query
+            $query = "SELECT * FROM users WHERE email = ?";
+            $stmt = $db->prepare($query);
+            $stmt->bind_param("s", $email);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $data = $result->fetch_assoc();
+            $stmt->close();
+
+            return $data;
         } catch (Exception $e) {
             error_log("Error finding user by email: " . $e->getMessage());
             echo "Error: " . $e->getMessage();

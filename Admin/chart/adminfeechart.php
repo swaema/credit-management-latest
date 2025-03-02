@@ -22,7 +22,7 @@ SELECT
   DATE_FORMAT(ms.month_date, '%M %Y') AS Month,
   COALESCE(SUM(li.admin_fee), 0) AS TotalAdminFee
 FROM month_series ms
-LEFT JOIN credit_management.loaninstallments li 
+LEFT JOIN loaninstallments li 
   ON li.status = 'Paid'
   AND DATE_FORMAT(li.pay_date, '%Y-%m') = DATE_FORMAT(ms.month_date, '%Y-%m')
 GROUP BY ms.month_date

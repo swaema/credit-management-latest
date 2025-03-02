@@ -1,4 +1,6 @@
 <?php
+
+use Kint\Kint;
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -53,12 +55,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else if ($login_result === -1) {
         $error_message = "Invalid email or password.";
     } else if ($login_result === 0) {
-        header("Location: http://safefund.mu/otp.php?s=OTP%20Sent%20Successfully&email=" . urlencode($email));
-exit();
+        $error_message = "Your account is still under review";
     } else if ($login_result === 2) {
         $error_message = "Your account has been suspended";
     }
+    if (User::findByEmail2($email)['user_verfied'] != 'verified'){
+        header("Location: http://safefund.mu/otp.php?s=OTP%20Sent%20Successfully&email=" . urlencode($email));
+        exit();
+    }
 }
+
 include_once('Layout/head.php');
 include_once('Layout/header.php');
 ?>
