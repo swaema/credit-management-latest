@@ -6,6 +6,7 @@ require_once 'Classes/Database.php';
 require_once 'Classes/Borrower.php';
 require_once 'Classes/Lender.php';
 require_once 'Classes/Mail.php';
+require_once 'Classes/otp.php';
 
 $messageSuccess = ""; // To store success  messages
 $messageError = ""; // To store  error messages
@@ -25,18 +26,11 @@ if (isset($_POST['SignUp'])) {
         $mobile = trim($_POST['mobile']);
         $address = trim($_POST['address']);
         
-       
-
-        //valiadtion for name
-        // if (strlen($mobile) < 5 || strlen($mobile) > 8) {
-        //     var_dump("success");
-        // }
-        // var_dump("error");
-
+    
         if (!preg_match("/^[a-zA-Z\s]+$/", $name)) {
             throw new Exception("Name can only contain letters and spaces.");
         }
-        // Validate email format
+
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new Exception("Invalid email address.");
         }
@@ -148,8 +142,13 @@ if (isset($_POST['SignUp'])) {
             // Success message
             $messageSuccess = "Registration successful! Your documents and profile image are uploaded.";
             // header("Location: index.php?s=$messageSuccess");
-            $otp = rand(100000, 999999);
-            storeOTPInSession($email, $otp, );
+            $otp = OTPHandler::generateOTP();
+            $otpsaved = OTPHandler::storeOTPInSession($email, $otp);
+            if ($otpsaved) {
+                sendOTPEmail($email, $otp);
+            }else{
+                throw new Exception("Failed to store OTP in session.");
+            }
         } else {
             $messageError = $result;
             header("Location: index.php?e=$result");
@@ -158,27 +157,14 @@ if (isset($_POST['SignUp'])) {
     } catch (Exception $e) {
 
         $messageError = $e->getMessage();
+
         header("Location: index.php?e=$messageError");
 
     }
 
 
 }
-function storeOTPInSession($email, $otp)
-{
 
-
-    session_start();
-
-
-    $_SESSION['otp_cache'][$email] = [
-        'otp' => $otp,
-        'created_at' => time()
-    ];
-    sendOTPEmail($email, $otp);
-    var_dump($_SESSION['otp_cache'][$email]);
-    exit;
-}
 function sendOTPEmail($email, $otp)
 {
     $check = Mail::SendOtp($email, $otp);

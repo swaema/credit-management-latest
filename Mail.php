@@ -165,49 +165,124 @@ class Mail
 
     }
     public static function SendOtp($email, $otp)
-    {
-        require 'vendor/autoload.php';
+{
+    require 'vendor/autoload.php';
 
-        // var_dump($userId);
-        // exit;
-        try {
-            $subject = "Your OTP Verification Code";
-            $message = "Your OTP code is: " . $otp;
-            // $headers = "From: noreply@yourwebsite.com";
-
-            $db = Database::getConnection();
-            if ($db === null) {
-                throw new Exception(message: "Database connection failed");
-            }
-            $mail = new PHPMailer(true);
-
-            // SMTP configuration
-            $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com';
-            $mail->SMTPAuth = true;
-            $mail->Username = 'sbw.hosenbocus@gmail.com';
-            $mail->Password = 'jdxetthyweurpkcg';
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port = 587;
-            $mail->setFrom('dissertationsafefund@gmail.com', 'Admin');
-            $mail->addAddress($email);
-            $mail->Subject = 'Verification Code of SafeFund';
-            $mail->Body = "Your OTP code is: " . $otp;
-
-            // $messagebody=$mail->Body;
-            $check = $mail->send();
-            if ($check) {
-                return 1;
-            } else {
-                return 0;
-            }
-        } catch (Exception $e) {
-            var_dump($e->getMessage());
-            exit;
-            // echo "Failed to send email. Error: {$mail->ErrorInfo}";
+    try {
+        $subject = "Your OTP Verification Code";
+        $message = "Your OTP code is: " . $otp;
+        
+        $db = Database::getConnection();
+        if ($db === null) {
+            throw new Exception(message: "Database connection failed");
         }
+        
+        $mail = new PHPMailer(true);
 
+        // SMTP configuration
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'sbw.hosenbocus@gmail.com';
+        $mail->Password = 'jdxetthyweurpkcg';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
+        $mail->setFrom('dissertationsafefund@gmail.com', 'Admin');
+        $mail->addAddress($email);
+        $mail->Subject = 'Verification Code of SafeFund';
+
+        // Beautiful responsive HTML body
+        $mail->Body = '
+        <html>
+        <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+                line-height: 1.6;
+            }
+            .email-container {
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .header {
+                background-color: #007bff;
+                color: #ffffff;
+                text-align: center;
+                padding: 10px 0;
+                border-radius: 8px;
+            }
+            .content {
+                padding: 20px;
+                font-size: 16px;
+                text-align: center;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                margin: 20px 0;
+            }
+            .otp-code {
+                font-size: 24px;
+                font-weight: bold;
+                color: #007bff;
+            }
+            .footer {
+                text-align: center;
+                font-size: 14px;
+                color: #777;
+            }
+            @media screen and (max-width: 600px) {
+                .email-container {
+                    padding: 15px;
+                }
+                .content {
+                    padding: 15px;
+                    font-size: 14px;
+                }
+            }
+        </style>
+        </head>
+        <body>
+            <div class="email-container">
+                <div class="header">
+                    <h1>SafeFund OTP Verification</h1>
+                </div>
+                <div class="content">
+                    <p>Hello,</p>
+                    <p>To complete your verification, please use the OTP code below:</p>
+                    <p class="otp-code">' . $otp . '</p>
+                    <p>This code will expire in 2 minutes.</p>
+                </div>
+                <div class="footer">
+                    <p>If you did not request this verification, please ignore this email.</p>
+                </div>
+            </div>
+        </body>
+        </html>';
+
+        // Send the email
+        $check = $mail->send();
+        if ($check) {
+            return 1;
+        } else {
+            return 0;
+        }
+    } catch (Exception $e) {
+        var_dump($e->getMessage());
+        exit;
     }
+}
+
     public static function ActiveStatusMail($email)
     {
         require 'vendor/autoload.php';

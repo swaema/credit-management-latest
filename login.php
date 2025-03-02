@@ -12,6 +12,7 @@ require_once 'Classes/Database.php';
 require_once 'Classes/User.php';
 require_once 'Classes/Borrower.php';
 require_once 'Classes/Lender.php';
+require_once 'Classes/otp.php';
 
 $message = "";
 if (isset($_GET['e'])) {
@@ -52,8 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else if ($login_result === -1) {
         $error_message = "Invalid email or password.";
     } else if ($login_result === 0) {
-        echo $_SESSION['user_status'];
-        $error_message = "Your account is being verified. Please wait.";
+        header("Location: http://safefund.mu/otp.php?s=OTP%20Sent%20Successfully&email=" . urlencode($email));
+exit();
     } else if ($login_result === 2) {
         $error_message = "Your account has been suspended";
     }
@@ -85,7 +86,12 @@ include_once('Layout/header.php');
                         <?php echo $error_message; ?>
                     </div>
                 <?php endif; ?>
-                
+                <?php if (isset($_GET['s']) && !empty($_GET['s'])): ?>
+    <div class="alert alert-success">
+        <?= htmlspecialchars($_GET['s'], ENT_QUOTES, 'UTF-8'); ?>
+    </div>
+<?php endif; ?>
+
                 <!-- Show info message if returning from Stripe -->
                 <?php if (isset($_SESSION['stripe_session_id'])): ?>
                     <div class="alert alert-info text-center">

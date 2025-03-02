@@ -191,9 +191,9 @@
   aria-hidden="true"
 >
   <div class="modal-dialog modal-lg">
-    <div class="modal-content rounded-lg shadow-lg">
-      <div class="modal-header border-b bg-gray-50 rounded-t-lg">
-        <h1 class="text-xl font-semibold text-gray-800" id="staticBackdropLabel">Welcome to SafeFund</h1>
+    <div class="modal-content">
+      <div class="modal-header bg-light">
+        <h5 class="modal-title" id="staticBackdropLabel">Welcome to SafeFund</h5>
         <button 
           type="button" 
           class="btn-close" 
@@ -201,22 +201,21 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="modal-body p-6">
+      <div class="modal-body">
         <form 
           id="signupForm" 
           action="signup.php" 
           method="post" 
-          enctype="multipart/form-data" 
-          class="space-y-6"
+          enctype="multipart/form-data"
         >
           <!-- Form Fields -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="row g-3">
             <!-- Full Name -->
-            <div class="space-y-2">
-              <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+            <div class="col-md-6">
+              <label for="name" class="form-label">Full Name</label>
               <input 
                 type="text" 
-                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
+                class="form-control" 
                 id="name" 
                 name="name" 
                 placeholder="Enter your full name"
@@ -228,11 +227,11 @@
             </div>
 
             <!-- Email Address -->
-            <div class="space-y-2">
-              <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email Address</label>
               <input 
                 type="email" 
-                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
+                class="form-control" 
                 id="email" 
                 name="email" 
                 placeholder="Enter your email" 
@@ -242,39 +241,39 @@
             </div>
 
             <!-- Password -->
-<!-- Password -->
-              <div class="space-y-2">
-                  <label for="user_pass" class="block text-sm font-medium text-gray-700">Password</label>
-                  <div class="relative">
-                      <input
-                              type="password"
-                              class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
-                              id="user_pass"
-                              name="user_pass"
-                              placeholder="Enter your password"
-                              pattern="^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$"
-                              title="Password must be 8-20 characters long, include at least one capital letter, and one special character."
-                              required
-                              autocomplete="off"
-                      >
-                      <button
-                              type="button"
-                              class="absolute right-3 top-1/2 transform -translate-y-1/2 text-sm text-gray-600 hover:text-gray-800"
-                              id="pass_toggle_btn"
-                              onclick="togglePassword()"
-                      >
-                          <svg class="eye-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M12 5C7 5 2.73 8.11 1 12.5C2.73 16.89 7 20 12 20C17 20 21.27 16.89 23 12.5C21.27 8.11 17 5 12 5ZM12 17.5C9.24 17.5 7 15.26 7 12.5C7 9.74 9.24 7.5 12 7.5C14.76 7.5 17 9.74 17 12.5C17 15.26 14.76 17.5 12 17.5ZM12 9.5C10.34 9.5 9 10.84 9 12.5C9 14.16 10.34 15.5 12 15.5C13.66 15.5 15 14.16 15 12.5C15 10.84 13.66 9.5 12 9.5Z" fill="currentColor"/>
-                          </svg>
-                      </button>
-                  </div>
+            <div class="col-md-6">
+              <label for="user_pass" class="form-label">Password</label>
+              <div class="input-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="user_pass"
+                  name="user_pass"
+                  placeholder="Enter your password"
+                  pattern="^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$"
+                  title="Password must be 8-20 characters long, include at least one capital letter, and one special character."
+                  required
+                  autocomplete="off"
+                >
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  id="pass_toggle_btn"
+                  onclick="togglePassword()"
+                >
+                  <svg class="eye-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5C7 5 2.73 8.11 1 12.5C2.73 16.89 7 20 12 20C17 20 21.27 16.89 23 12.5C21.27 8.11 17 5 12 5ZM12 17.5C9.24 17.5 7 15.26 7 12.5C7 9.74 9.24 7.5 12 7.5C14.76 7.5 17 9.74 17 12.5C17 15.26 14.76 17.5 12 17.5ZM12 9.5C10.34 9.5 9 10.84 9 12.5C9 14.16 10.34 15.5 12 15.5C13.66 15.5 15 14.16 15 12.5C15 10.84 13.66 9.5 12 9.5Z" fill="currentColor"/>
+                  </svg>
+                </button>
               </div>
+            </div>
+
             <!-- Confirm Password -->
-            <div class="space-y-2">
-              <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+            <div class="col-md-6">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
               <input 
                 type="password" 
-                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
+                class="form-control" 
                 id="confirmPassword" 
                 name="confirmPassword" 
                 placeholder="Confirm your password" 
@@ -284,11 +283,11 @@
             </div>
 
             <!-- Mobile Number -->
-            <div class="space-y-2">
-              <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number</label>
+            <div class="col-md-6">
+              <label for="mobile" class="form-label">Mobile Number</label>
               <input 
                 type="text" 
-                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
+                class="form-control" 
                 id="mobile" 
                 name="mobile" 
                 placeholder="Enter your mobile number"
@@ -300,10 +299,10 @@
             </div>
 
             <!-- Role Selection -->
-            <div class="space-y-2">
-              <label for="role" class="block text-sm font-medium text-gray-700">Sign Up As</label>
+            <div class="col-md-6">
+              <label for="role" class="form-label">Sign Up As</label>
               <select 
-                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
+                class="form-select" 
                 id="role" 
                 name="role" 
                 required
@@ -312,30 +311,27 @@
                 <option value="lender">Lender</option>
               </select>
             </div>
-          </div>
 
-          <!-- Address -->
-          <div class="space-y-2">
-            <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
-            <textarea 
-              class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
-              id="address" 
-              name="address" 
-              placeholder="Enter your address" 
-              required 
-              autocomplete="off"
-              rows="3"
-            ></textarea>
-          </div>
+            <!-- Address -->
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <textarea 
+                class="form-control" 
+                id="address" 
+                name="address" 
+                placeholder="Enter your address" 
+                required 
+                autocomplete="off"
+                rows="3"
+              ></textarea>
+            </div>
 
-          <!-- File Uploads -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Profile Image -->
-            <div class="space-y-2">
-              <label for="profile_image" class="block text-sm font-medium text-gray-700">Profile Image</label>
+            <!-- File Uploads -->
+            <div class="col-md-6">
+              <label for="profile_image" class="form-label">Profile Image</label>
               <input 
                 type="file" 
-                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
+                class="form-control" 
                 id="profile_image" 
                 name="profile_image"
                 accept=".png,.jpg,.jpeg,.gif" 
@@ -343,12 +339,11 @@
               >
             </div>
 
-            <!-- NIC Upload (Front and Back) -->
-            <div class="space-y-2">
-              <label for="nic" class="block text-sm font-medium text-gray-700">NIC (Front and Back)</label>
+            <div class="col-md-6">
+              <label for="nic" class="form-label">NIC (Front and Back)</label>
               <input 
                 type="file" 
-                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
+                class="form-control" 
                 id="nic" 
                 name="nic[]" 
                 multiple 
@@ -356,12 +351,11 @@
               >
             </div>
 
-            <!-- Utility Bills -->
-            <div class="space-y-2">
-              <label for="utility_bills" class="block text-sm font-medium text-gray-700">Utility Bills (At least 2)</label>
+            <div class="col-md-6">
+              <label for="utility_bills" class="form-label">Utility Bills (At least 2)</label>
               <input 
                 type="file" 
-                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
+                class="form-control" 
                 id="utility_bills" 
                 name="utility_bills[]" 
                 multiple 
@@ -369,12 +363,11 @@
               >
             </div>
 
-            <!-- Salary Statements -->
-            <div class="space-y-2">
-              <label for="salary_statements" class="block text-sm font-medium text-gray-700">Salary Statements (Last 6 Months)</label>
+            <div class="col-md-6">
+              <label for="salary_statements" class="form-label">Salary Statements (Last 6 Months)</label>
               <input 
                 type="file" 
-                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200" 
+                class="form-control" 
                 id="salary_statements" 
                 name="salary_statements[]" 
                 multiple 
@@ -384,15 +377,15 @@
           </div>
 
           <!-- Form Actions -->
-          <div class="flex items-center space-x-4 pt-4">
+          <div class="d-flex justify-content-between align-items-center mt-4">
             <button 
               type="submit" 
               name="SignUp" 
-              class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 transition-colors"
+              class="btn btn-primary"
             >
               Sign Up
             </button>
-            <a href="login.php" class="text-blue-600 hover:text-blue-700 font-medium">Already Registered?</a>
+            <a href="login.php" class="text-primary">Already Registered?</a>
           </div>
         </form>
       </div>
@@ -420,32 +413,6 @@
       }
     }
 </script>
-
-<!--<script>-->
-<!--document.addEventListener('DOMContentLoaded', function() {-->
-<!--    const toggleBtn = document.getElementById('pass_toggle_btn');-->
-<!--    const passField = document.getElementById('user_pass');-->
-<!--    -->
-<!--    if (toggleBtn && passField) {-->
-<!--        toggleBtn.addEventListener('click', function(e) {-->
-<!--            e.preventDefault();-->
-<!--            -->
-<!--            if (passField.type === 'password') {-->
-<!--                passField.type = 'text';-->
-<!--                this.textContent = 'Hide';-->
-<!--            } else {-->
-<!--                passField.type = 'password';-->
-<!--                this.textContent = 'Show';-->
-<!--            }-->
-<!--        });-->
-<!--    }-->
-<!--});-->
-<!--</script>-->
-
-<!-- Optional: signup_validation.js (if you have custom validation) -->
-<!-- 
-<script src="Assets/Scripts/signup_validation.js"></script>
--->
 
 </body>
 </html>
