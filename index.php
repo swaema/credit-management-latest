@@ -82,10 +82,10 @@ include_once('Layout/carousal.php');
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100 shadow-sm hover-shadow transition-all">
                     <div class="card-header py-4" style="background-color: #A3DDCB;">
-                        <h3 class="text-center mb-0 fw-bold">Working Capital</h3>
+                        <h3 class="text-center mb-0 fw-bold">Investment Opportunities</h3>
                     </div>
                     <div class="card-body">
-                        <p class="text-center mb-0">Meet your working capital requirements to ensure uninterrupted business operations.</p>
+                        <p class="text-center mb-0">Lend with confidence and earn attractive returns through our structured lending platform designed for stability and security.</p>
                     </div>
                 </div>
             </div>
@@ -94,10 +94,10 @@ include_once('Layout/carousal.php');
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100 shadow-sm hover-shadow transition-all">
                     <div class="card-header py-4" style="background-color: #F8C76D;">
-                        <h3 class="text-center mb-0 fw-bold">Supply Chain</h3>
+                        <h3 class="text-center mb-0 fw-bold">Personal Financing</h3>
                     </div>
                     <div class="card-body">
-                        <p class="text-center mb-0">Get funds for local purchase or import of raw materials or goods.</p>
+                        <p class="text-center mb-0">From home improvements to unexpected expenses, our personal loan solutions offer quick access to funds with competitive rates.</p>
                     </div>
                 </div>
             </div>
@@ -126,9 +126,7 @@ include_once('Layout/carousal.php');
                         Simplifying SME financing in Mauritius
                     </h2>
                     <p class="lead" style="font-family: 'Times New Roman', Times, serif; line-height: 1.8;">
-                        Launched in 2019, our mission is to simplify and democratise SME financing in Mauritius. As SMEs are the 
-                        backbone of the Mauritian economy, we are committed to solving the SME financing gap, while providing a 
-                        convenient and new asset class with attractive returns to individual and institutional investors.
+                    SafeFund is a modern credit management platform designed to simplify lending and borrowing. Using advanced technology, we provide a transparent and efficient system where businesses and individuals can access funding with ease. Our mission is to create a fair and accessible financial ecosystem, ensuring that lenders achieve profitable returns while borrowers gain the financial support they need.
                     </p>
                 </div>
             </div>
@@ -151,11 +149,9 @@ include_once('Layout/carousal.php');
                 <div class="card h-100 border-0 shadow-sm" style="background-color: #85D5E5;">
                     <div class="card-body p-4 p-lg-5">
                         <p class="card-text mb-4 lead">
-                            "Safefund helped me raise finance for Zakda Wrought Iron Ltd with unbelievable rapidity and simplicity. 
-                            They came to my support and help me win large contracts on the back of their faith in my business and 
-                            its growth prospects."
+                            "SafeFund helped me expand my business effortlessly! The loan process was smooth, and the support team was incredibly helpful. I highly recommend them!"
                         </p>
-                        <h5 class="fw-bold text-white mb-0">Anonymous</h5>
+                        <h5 class="fw-bold text-white mb-0">Sarah L</h5>
                     </div>
                 </div>
             </div>
@@ -164,11 +160,9 @@ include_once('Layout/carousal.php');
                 <div class="card h-100 border-0 shadow-sm" style="background-color: #85D5E5;">
                     <div class="card-body p-4 p-lg-5">
                         <p class="card-text mb-4 lead">
-                            "Safefund allows me to give loans entrepreneurs from diverse sectors in Mauritius, within just 20 minutes. 
-                            It has strong governance in place, predicated on in independent third party firm that scrutinises the 
-                            entrepreneur's financials, and a strong credit committee that thoroughly screens all deals."
+                            "Investing with SafeFund has been a game-changer for me. The platform is secure, and I’ve seen great returns on my investment. A hassle-free experience!"
                         </p>
-                        <h5 class="fw-bold text-white mb-0">Anonymous</h5>
+                        <h5 class="fw-bold text-white mb-0">Daniel</h5>
                     </div>
                 </div>
             </div>

@@ -67,7 +67,7 @@ include_once('Layout/header.php');
       <img src="Assets/Images/slider-1.jpg" style="min-height: 630px" class="d-block w-100 carousal-img" alt="...">
       <div class="carousel-overlay"></div>
       <div class="carousel-caption d-none d-md-block text-start" style="top: 60px;">
-        <h1>SME loans through <br>Peer-to-Peer lending</h1>
+        <h1>Welcome to safeFund<br>Smart and Secure Financing for your future</h1>
         <p>Get the business financing that you need without collateral. Simple online loan application. Fast approval.
         </p>
         <p><a class="btn btn-lg btn-primary" href="loanCalculator.php">Take a Loan</a></p>
@@ -78,7 +78,7 @@ include_once('Layout/header.php');
       <div class="carousel-overlay"></div>
 
       <div class="carousel-caption d-none d-md-block text-start" style="top: 60px;">
-        <h1>SME loans through <br>Peer-to-Peer lending</h1>
+        <h1>Get quick loans through <br>Peer-to-Peer lending</h1>
         <p>Get the business financing that you need without collateral. Simple online loan application. Fast approval.
         </p>
         <p><a class="btn btn-lg btn-primary" href="loanCalculator.php">Take a Loan</a></p>

@@ -23,7 +23,7 @@
                 <h5 class="text-primary">Contact Us</h5>
                 <ul class="list-unstyled">
                     <li><i class="bi bi-envelope-fill me-2"></i> safefund@gmail.com</li>
-                    <li><i class="bi bi-telephone-fill me-2"></i> +123 456 7890</li>
+                    <li><i class="bi bi-telephone-fill me-2"></i> +23057862402</li>
                 </ul>
             </div>
             <!-- Social Media -->
