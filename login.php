@@ -59,10 +59,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else if ($login_result === 2) {
         $error_message = "Your account has been suspended";
     }
-    if (User::findByEmail2($email)['user_verfied'] != 'verified'){
-        header("Location: http://safefund.mu/otp.php?s=OTP%20Sent%20Successfully&email=" . urlencode($email));
+    if (User::findByEmail2($email)['user_verfied'] != 'verified') {
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+        $host = $_SERVER['HTTP_HOST'];
+        header("Location: " . $protocol . $host . "/otp.php?s=OTP%20Sent%20Successfully&email=" . urlencode($email));
         exit();
-    }
+    }    
 }
 
 include_once('Layout/head.php');
