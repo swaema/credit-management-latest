@@ -990,8 +990,8 @@ class Loan
     public static function fetchLateEmails() {
         $db = Database::getConnection();
         $query = "SELECT DISTINCT u.id as user_id, u.email as Email
-                  FROM credit_management.users u
-                  JOIN credit_management.loaninstallments li ON u.id = li.user_id
+                  FROM users u
+                  JOIN loaninstallments li ON u.id = li.user_id
                   WHERE li.status = 'Pending'
                     AND li.pay_date < CURDATE()";
     
