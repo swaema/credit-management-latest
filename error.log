@@ -87,3 +87,16 @@ Stack trace:
 [02-Mar-2025 19:27:54 UTC] PHP Warning:  Undefined array key "user_verified" in /var/www/credit-management-latest/login.php on line 62
 [02-Mar-2025 19:29:01 UTC] PHP Warning:  Undefined array key "user_verified" in /var/www/credit-management-latest/login.php on line 62
 [02-Mar-2025 19:29:01 UTC] PHP Warning:  Undefined array key "user_verified" in /var/www/credit-management-latest/login.php on line 63
+[03-Mar-2025 18:12:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/safefund/public_html/Classes/Database.php:7
+Stack trace:
+#0 /home/safefund/public_html/Classes/Database.php(7): mysqli->__construct()
+#1 /home/safefund/public_html/Classes/User.php(363): Database::getConnection()
+#2 /home/safefund/public_html/Classes/UserAuth.php(20): User::findByEmail()
+#3 /home/safefund/public_html/login.php(34): UserAuth::login()
+#4 {main}
+  thrown in /home/safefund/public_html/Classes/Database.php on line 7
+[04-Mar-2025 10:45:17 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/safefund/public_html/login.php on line 62
+[04-Mar-2025 10:45:20 UTC] PHP Warning:  Undefined array key "email" in /home/safefund/public_html/login.php on line 32
+[04-Mar-2025 10:45:20 UTC] PHP Warning:  Undefined array key "password11" in /home/safefund/public_html/login.php on line 33
+[04-Mar-2025 10:45:20 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/safefund/public_html/login.php on line 62
+[04-Mar-2025 10:45:20 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/safefund/public_html/login.php on line 65
