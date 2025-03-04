@@ -46,6 +46,7 @@ if (isset($_POST['SignUp'])) {
             throw new Exception("Invalid email address.");
         }
 
+
         // Validate password length
         if (strlen($password) < 8) {
             throw new Exception("Password must be at least 8 characters long.");
@@ -54,6 +55,10 @@ if (isset($_POST['SignUp'])) {
         // Validate role selection
         if (!in_array($role, ['borrower', 'lender'])) {
             throw new Exception("Invalid role selected.");
+        }
+        $mobileexist = User::checkIfPhoneNumberExist($mobile);
+        if ($mobileexist){
+            throw new Exception("Mobile Number already exist");
         }
 
         // Create user and hash password

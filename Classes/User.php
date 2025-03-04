@@ -403,6 +403,28 @@ class User
         }
     }
 
+    public static function checkIfPhoneNumberExist($number)
+    {
+        try {
+            $db = Database::getConnection();
+            if ($db === null) {
+                throw new Exception("Database connection failed");
+            }
+            $query = "SELECT * FROM users WHERE mobile = ?";
+            $stmt = $db->prepare($query);
+            $stmt->bind_param("i", $number);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $data = $result->fetch_assoc();
+            $stmt->close();
+
+            return $data;
+        } catch (Exception $e) {
+            error_log("Error finding Mobile: " . $e->getMessage());
+            echo "Error: " . $e->getMessage();
+        }
+    }
+
 
     public function delete()
     {
