@@ -7,7 +7,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="Assets/Images/Carousal-1.jpg" class="d-block w-100 carousal-img" alt="Business Loans">
+      <img src="Assets/Images/carousal-1.jpg" class="d-block w-100 carousal-img" alt="Business Loans">
       <div class="carousel-overlay"></div>
       <!-- Removed d-none d-md-block classes -->
       <div class="carousel-caption text-start">
@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="Assets/Images/Carousal-2.jpg" class="d-block w-100 carousal-img" alt="Peer-to-Peer Lending">
+      <img src="Assets/Images/carousal-2.jpg" class="d-block w-100 carousal-img" alt="Peer-to-Peer Lending">
       <div class="carousel-overlay"></div>
       <!-- Removed d-none d-md-block classes -->
       <div class="carousel-caption text-start">
@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="Assets/Images/Carousal-3.jpg" class="d-block w-100 carousal-img" alt="Fast Approval Loans">
+      <img src="Assets/Images/carousal-3.jpg" class="d-block w-100 carousal-img" alt="Fast Approval Loans">
       <div class="carousel-overlay"></div>
       <!-- Removed d-none d-md-block classes -->
       <div class="carousel-caption text-start">
