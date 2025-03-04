@@ -349,3 +349,21 @@
     "amount": 30000,
     "percentage": "75"
 }
+[2025-03-04 12:39:02] Starting contribution success processing
+[2025-03-04 12:39:02] Processing session - Data: {
+    "session_id": "cs_test_a1rApJAeriwCuAHgSumhGq95JR0VkrzcSgp7yU6tCD8foiLlC1nigFFa4w"
+}
+[2025-03-04 12:39:02] Contribution processed successfully - Data: {
+    "loan_id": "1",
+    "amount": 8000,
+    "percentage": "80"
+}
+[2025-03-04 12:40:29] Starting contribution success processing
+[2025-03-04 12:40:29] Processing session - Data: {
+    "session_id": "cs_test_a170YAHoEAYEBdZMFGY63NZtwjrU2hn4aZIRzab74D3P7dVhkkBYv043Z5"
+}
+[2025-03-04 12:40:29] Contribution processed successfully - Data: {
+    "loan_id": "1",
+    "amount": 2000,
+    "percentage": "20"
+}
