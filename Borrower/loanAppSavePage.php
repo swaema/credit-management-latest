@@ -234,7 +234,7 @@ include_once('Layout/sidebar.php');
                             <div class="col-12">
                                 <div class="card p-4 text-center">
                                     <h5>MUR <span id="monthlyRepayment">0</span> /month</h5>
-                                    <div class="chart-container">
+                                    <div class="chart-container container d-flex justify-content-center">
                                         <canvas id="loanChart"></canvas>
                                     </div>
                                     <h6>Total amount <span id="repaymentMode">repayable</span>: MUR <span

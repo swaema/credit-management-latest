@@ -26,7 +26,18 @@ if (isset($_POST['SignUp'])) {
         $mobile = trim($_POST['mobile']);
         $address = trim($_POST['address']);
         
+        if (empty($mobile)) {
+            throw new Exception("Mobile number cannot be empty.");
+        }
     
+        if (substr($mobile, 0, 1) !== '5') {
+            throw new Exception("Mobile number must start with '5'.");
+        }
+    
+        if (strlen($mobile) !== 8) {
+            throw new Exception("Mobile number must have a length of exactly 8 characters.");
+        }
+        
         if (!preg_match("/^[a-zA-Z\s]+$/", $name)) {
             throw new Exception("Name can only contain letters and spaces.");
         }
